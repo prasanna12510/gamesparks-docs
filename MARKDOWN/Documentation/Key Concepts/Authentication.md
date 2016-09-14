@@ -18,6 +18,8 @@ If you use device authentication, each time the device authenticates it will be 
 
 When using device authentication, there's no display name stored against the player. If you're using Leaderboards, the displayName field of each Leaderboard entry will be blank for these users. You can set a displayName against these anonymous players using *ChangeUserDetailsRequest*, which will set the displayName of the player and also update all Leaderboards to contain the correct displayName.
 
+<q>**Important: Mobile Device Authentication ID!** For mobile device authentication, we strongly recommend that you use an IDFV device ID. Using an IDFA device ID can be unreliable and may introduce privacy risk.</q>
+
 ## Social Authentication
 
 If you don't want players to create a userName / password combination, you can delegate authentication to one of the social providers. Currently these are:

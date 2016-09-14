@@ -155,7 +155,15 @@ Selecting this for one of the Thresholds in your Match instructs the Match to ma
 
 **Example:** Suppose our first Threshold, using *Absolute* type, was selected to *Accept Min Players*. For *MULTI_MCH*, *Min. Players* is set at 2. Now suppose a player with skill level 20 issues a *MatchmakingRequest* using *MULTI_MCH*. If 1 other matching player is found in the first 10 seconds - at, say, 4 seconds in with skill level 21 - then the Match would be made for these 2 players and the matchmaking process would cease after only 4 seconds.
 
-<q>**Note:** You can only apply *Accept Min. Players* to *one* Threshold in a Match. However, where there are multiple Thresholds, then *Accept Min. Players* will also be applied to any successive Thresholds used up to completion of the matchmaking process. So, if the first *Absolute* Threshold has *Accept Min. Players* but the minimum of 2 matched players are not found in the first 10 seconds and during the first Threshold period, but 2 matched players are found after 12 seconds and during the *Relative* Threshold period, the match will be made and the matchmaking process will cease at 12 seconds.</q>
+#### Accept Min. Players Only Applied to One Threshold
+
+<q>**Important!** You can only apply *Accept Min. Players* to *one* Threshold in a Match.</q>
+
+However, where there are multiple Thresholds there are two important things to note:
+* A Pending Match will apply minimum players as soon as a Threshold period with *Accept Min. Players* starts:
+  * **Example:** If the first *Absolute* Threshold doesn't have *Accept Min. Players* enabled and a match for the minimum of 2 players is found but a match for the maximum of 4 players is not found in the first 10 seconds and during the first Threshold period, a match *will not be made*. However, if *Accept Min. Players* is enabled for the second Threshold period - for the 10 to 20 seconds of the matchmaking process - then as soon as the second Threshold period starts, the match will be made for the 2 players matched for the first Threshold.
+* *Accept Min. Players* will also be applied to any successive Thresholds used up to completion of the matchmaking process:
+    * **Example:** If the first *Absolute* Threshold has *Accept Min. Players* enabled but the minimum of 2 matched players are not found in the first 10 seconds and during the first Threshold period, but 2 matched players are found after 12 seconds and during the *Relative* Threshold period, the match will be made and the matchmaking process will cease at 12 seconds.
 
 <q>**Remember!**  If *Accept Min. Players* is not selected for any Threshold, and there aren't enough players found in the Match to reach the *Max. Players* value, no Match will be found, even if there are more players than the *Min. Players* value.</q> 
 
