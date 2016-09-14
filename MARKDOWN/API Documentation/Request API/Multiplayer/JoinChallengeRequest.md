@@ -1,6 +1,3 @@
----
-src: /API Documentation/Request API/Multiplayer/JoinChallengeRequest.md
----
 
 # JoinChallengeRequest
 
@@ -25,6 +22,7 @@ A response to a player joining a challenge
 
 Parameter | Type | Description
 --------- | ---- | -----------
+joined | boolean | Whether the player successfully joined the challenge
 scriptData | ScriptData | A JSON Map of any data added either to the Request or the Response by your Cloud Code
 
 ## Nested types
@@ -63,6 +61,7 @@ eligibility | { "invalidSegments" :  { "actual" : {"XXX" : "YYY"}, "required" : 
 		.SetEligibility(eligibility)
 		.SetMessage(message)
 		.Send((response) => {
+		bool? joined = response.Joined; 
 		GSData scriptData = response.ScriptData; 
 		});
 
@@ -82,6 +81,7 @@ eligibility | { "invalidSegments" :  { "actual" : {"XXX" : "YYY"}, "required" : 
 		.setEligibility(eligibility)
 		.setMessage(message)
 		.send(function(response:com.gamesparks.api.responses.JoinChallengeResponse):void {
+		var joined:Boolean = response.getJoined(); 
 		var scriptData:ScriptData = response.getScriptData(); 
 		});
 
@@ -97,6 +97,7 @@ eligibility | { "invalidSegments" :  { "actual" : {"XXX" : "YYY"}, "required" : 
 	[request setEligibility:eligibility;
 	[request setMessage:message;
 	[request setCallback:^ (GSJoinChallengeResponse* response) {
+	BOOL joined = [response getJoined]; 
 	NSDictionary* scriptData = [response getScriptData]; 
 	}];
 	[gs send:request];
@@ -113,6 +114,7 @@ eligibility | { "invalidSegments" :  { "actual" : {"XXX" : "YYY"}, "required" : 
 	...
 	
 	void JoinChallengeRequest_Response(GS& gsInstance, const JoinChallengeResponse& response) {
+	Optional::t_BoolOptional joined = response.getJoined(); 
 	GSData scriptData = response.getScriptData(); 
 	}
 	......
@@ -139,6 +141,7 @@ gs.getRequestBuilder().createJoinChallengeRequest()
 	.send(new GSEventListener<JoinChallengeResponse>() {
 		@Override
 		public void onEvent(JoinChallengeResponse response) {
+			Boolean joined = response.getJoined(); 
 			GSData scriptData = response.getScriptData(); 
 		}
 	});
@@ -154,6 +157,7 @@ gs.getRequestBuilder().createJoinChallengeRequest()
 	request.message = ...;
 	var response = request.Send();
 	
+var joined = response.joined; 
 var scriptData = response.scriptData; 
 ```
 

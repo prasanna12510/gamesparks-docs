@@ -1,6 +1,3 @@
----
-src: /API Documentation/Request API/Teams/GetTeamRequest.md
----
 
 # GetTeamRequest
 

@@ -1,6 +1,3 @@
----
-src: /API Documentation/Request API/Multiplayer/FindChallengeRequest.md
----
 
 # FindChallengeRequest
 

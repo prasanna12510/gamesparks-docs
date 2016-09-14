@@ -1,7 +1,3 @@
----
-src: /API Documentation/Cloud Code API/Utilities/SparkDigest.md
----
-
 # SparkDigest
 
 Returns a reference to a SparkDigest object.
@@ -9,6 +5,7 @@ Returns a reference to a SparkDigest object.
 <b>example</b>
 
 <pre rel="highlighter" code-brush="js" contenteditable="false">Spark.getDigester();</pre>
+
 
 
 ## hmacMd5Base64

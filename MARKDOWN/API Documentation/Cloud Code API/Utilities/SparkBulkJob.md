@@ -1,7 +1,3 @@
----
-src: /API Documentation/Cloud Code API/Utilities/SparkBulkJob.md
----
-
 # SparkBulkJob
 
 An object that represents a bulk job.
@@ -11,12 +7,11 @@ e.g.
 <pre rel="highlighter" code-brush="js" contenteditable="false">var bulkJob = Spark.getBulkJobScheduler().listBulkJobs(null)[0];</pre>
 
 
+
 ## getId
 _signature_ getId()</p>
 _returns_ string</p>
-Returns the ID of this bulk job.
-<b>example</b>
-<pre rel="highlighter" code-brush="js" contenteditable="false">Spark.getBulkJobScheduler().listBulkJobs(null)[0].getId();</pre>
+Returns the ID of this bulk job.<b>example</b><pre rel="highlighter" code-brush="js" contenteditable="false">Spark.getBulkJobScheduler().listBulkJobs(null)[0].getId();</pre>
 
 ## getActualCount
 _signature_ getActualCount()</p>

@@ -5,8 +5,14 @@ src: /SDK Center/Unity.md
 
 # Unity3D SDK
 
-Download the GameSparks [Unity SDK v5.3 package](http://repo.gamesparks.net/unity-sdk/Gamesparks_Unity_5.3.5.209.unitypackage)
+Download the GameSparks [Unity SDK v5.4 package](http://repo.gamesparks.net.s3-eu-west-1.amazonaws.com/unity-sdk/Gamesparks_Unity_5.4.0.52.unitypackage)
 
+## V5.4.0
+
+* Remove native plugins for sockets
+* Use TLSv1.2 for all socket connections
+* Add update checker to keep SDK up to date
+* API Updates to V67
 
 ## V5.3.3
 
