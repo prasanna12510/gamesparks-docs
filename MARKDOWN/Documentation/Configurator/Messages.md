@@ -6,46 +6,78 @@ src: /Documentation/Configurator/Messages.md
 # Messages
 
 The GameSparks platform allows you to send messages to your players.  These can be:
-* In-game messages when a player is playing the game, or
+* In-game messages when a player is playing the game.
 * Push notifications when they are not playing the game (including email if desired, via an integration with SendGrid).
 
-This section allows you to set up and configure these messages.
-
-![](img/Noti/1.jpg)
-
-The Message Configuration box contains all the message types available on the platform.  Although most of these appear to relate to Challenges there are other categories supported (uploads, achievements, p2p messaging) and the 'ScriptMessage' option gives you full flexibility.
+This section explains how to set up and configure messages for your game.
 
 ## Message Configuration
 
-You can configure each message type by clicking on the ![](/img/fa/edit.png) icon for the desired message. You will be presented with the following screen:
+*1.* Navigate to *Configurator > Messages*.
 
-![](img/Noti/2.jpg)
+![](img/Noti/6.png)
+
+The *Message Configuration* panel contains two tabs:
+* Under *Standard Messages*, you'll see all the message types available on the platform.  Many of these standard messages relate to Challenges but other categories of standard message are supported (uploads, achievements, p2p messaging).
+* Under the *Script Message Extensions* tab, you can exploit full messaging flexibility by creating your own custom messages. (See the next [section](#Script Message Extensions)).
+
+
+
+*2.* To configure a standard message type, click the edit ![](/img/fa/edit.png) icon for the desired message. The *Edit Message Delivery Options* dialog appears:
+
+![](img/Noti/7.png)
+
+In this example, the edit dialog for the *AchievementEarnedMessage* is shown.
+
+*3.* Enter the details for the message on the edit dialog:
 
 * *Send Via Socket* \- Sends the message via the Socket.
 * *Send As Push* \- Send the message as a push notification.
 * *Suppress Push On Socket Send* \- If message is sent via the Socket, don't send it as Push as well.
 * *Include In Push Count* \- Should the message be included in Push Count.
+* *Expire After (Hours)* \- Enter the expiry time in hours for the message. The system will attempt to send the message to recipients for this period. If a player is not connected when the message is issued and they re-connect within the expiry period they will get the message when they re-connect. If they do not re-connect within the expiry period, they will not get the message. (In either case, whether a player does or doesn't receive the message, this will be logged by the system.)
+* *Device Types* - If you have configured the message as a push notification, enter the device types for the notification. The supported device types are:
+  * *WP8* - Windows Phone 8
+  * *W8* - Windows 8
+  * *IOS* - Apple
+  * *ANDROID* - Google
+  * *KINDLE* - Amazon
 * *Message* \- The message to be sent.
 * *Title* \- The title of the Message.
 * *Subtitle* \- The subtitle of the Message.
+* *Advanced configuration* \- See Step 4 below.
+* *Segment configuration* \- Click the plus ![](/img/fa/plus.png) icon to configure any segment configuration you want to apply to the message. (See [section](#Different Messages for Different Players) below)
+
+*4.* If you want to configure advanced JSON configuration for the message, click in the *Advanced configuration* strip to expand it:
+
+![](img/Noti/8.png)
+
+You can enter your custom JSON for three supported integrations:
+* *IOS* for Apple
+* *Kindle* for Amazon
+* *Android* for Google
+
 
 ## Script Message Extensions
 
-GameSparks allows you to create custom messages using Script Message Extensions, these messages can be sent from your Cloud Code.
+GameSparks allows you to create custom messages, which you can send from your Cloud Code.
 
-![](img/Noti/3.jpg)
+*1.* On the *Script Message Extensions* tab, click the plus ![](/img/fa/plus.png) icon. The *Create ScriptMessage Extension* dialog appears:
 
-These Messages are uniquely identified using a ShortCode.
+![](img/Noti/9.png)
 
-## Different message for different players
+* These Messages are uniquely identified using a Short Code.
+* The configuration details for a custom message are similar to standard message. (See previous [section](#Message Configuration) )  
 
-You can use segmentation to send player different messages through the segment configuration. For example, you can create a segment for French players and send these players the same message but in French.
+## Different Messages for Different Players
+
+You can use segmentation to send players different messages using *Segment configuration*. For example, you can create a segment for French players and send these players French language versions of messages:
 
 ![](img/Noti/4.jpg)
 
-## Global, scheduled messages
+## Global Scheduled Messages
 
-The platform allows you to execute code every day, hour and minute. This allows you to send scheduled global messages. Here is an example of how to set up the messages in Cloud code in the 'Every Day' event under 'System'.  
+The platform allows you to execute code every day, hour, and minute, which means you can send scheduled global messages. Here's an example of how to set up the messages in Cloud Code in the *Every Day* Event under *System*.  
 
 ![](img/Noti/5.jpg) 
 
@@ -66,9 +98,9 @@ The platform allows you to execute code every day, hour and minute. This allows 
     Spark.sendMessageById({"Message": "Good day!"}, stringArr);
 ```
 
-## Sending specific messages to specific players
+## Sending Specific Messages to Specific Players
 
-What if you want to send a global message to specific type of player? The following loop is changed to take account the player segmentation.  
+What if you want to send a global message to a specific type of player? You can change the *ForEach* loop of the example given in the previous [section](#Global Scheduled Messages) to take account of player segmentation.  
 
 ```
     //String Array
@@ -91,4 +123,5 @@ What if you want to send a global message to specific type of player? The follow
 
     //Send message by IDs in the string array
     Spark.sendMessageById({"Message": "Good day!"}, stringArr);
+
 ```

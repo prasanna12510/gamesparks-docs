@@ -14,7 +14,7 @@ You'll create:
 
 ## Creating a Runtime Collection
 
-Create a runtime collection, for this tutorial we're calling ours *feedback*.
+Create a runtime collection - for this tutorial we're calling ours *feedback*.
 
 <q>**More Information?** For more details on creating runtime collections see [NoSQL Explorer](/Documentation/NoSQL Explorer.md).</q>
 
@@ -41,7 +41,7 @@ feedbackCollection.insert({"message":Spark.getData().message,
 
 ## The Screens 1 - Snippets
 
-Now we need to design the screens that will display the feedback to us. So far we have the collection that will save the submissions and the Event which allows our users to submit their feedback.
+Now we need to design the parts of the screen that will display the feedback to us. So far we have the collection that will save the submissions and the Event which allows our users to submit their feedback.
 
 In this section, we'll set up four snippets for our feedback screen.
 
@@ -155,7 +155,7 @@ Handlebars:
 
 ### Displaying the Feedback Message
 
-Our final snippet will be a pop up that displays the feedback on it own.
+Our final snippet will be a pop-up that displays the feedback on its own.
 
 Javascript:
 
