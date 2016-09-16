@@ -26,7 +26,7 @@ The Event is going to have 3 Attributes:
 2. The level that feedback was submitted for (String).
 3. Star rating (Number).
 
-The Event's Cloud Code will take that data and insert it to the feedback collection as follows:
+The Event's Cloud Code will take that data and insert the data into the feedback collection as follows:
 
 ```
 //Load the feedback collection
@@ -77,7 +77,7 @@ Handlebars:
 
 ### Displaying the Feedback Results
 
-The results screen will display the feedback we wish to display. The message, level, star rating, and player will be available to see. It will also have a button which expands the message into it's own popup screen.
+The results screen will display the feedback we wish to display. The message, level, star rating, and player will be available to see. The results screen will also have a button which expands the message into a pop-up screen.
 
 Javascript:
 

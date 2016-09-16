@@ -35,7 +35,7 @@ In this example, the edit dialog for the *AchievementEarnedMessage* is shown.
 * *Send As Push* \- Send the message as a push notification.
 * *Suppress Push On Socket Send* \- If message is sent via the Socket, don't send it as Push as well.
 * *Include In Push Count* \- Should the message be included in Push Count.
-* *Expire After (Hours)* \- Enter the expiry time in hours for the message. The system will attempt to send the message to recipients for this period. If a player is not connected when the message is issued and they re-connect within the expiry period they will get the message when they re-connect. If they do not re-connect within the expiry period, they will not get the message. (In either case, whether a player does or doesn't receive the message, this will be logged by the system.)
+* *Expire After (Hours)* \- Enter the expiry time in hours for the message. The system will attempt to send the message to recipients for this period. If a player is not connected when the message is issued and they re-connect within the expiry period, they will get the message when they re-connect. If a player does not re-connect within the expiry period, they will not get the message. (In either case, whether a player does or doesn't receive the message, this will be logged by the system.)
 * *Device Types* - If you have configured the message as a push notification, enter the device types for the notification. The supported device types are:
   * *WP8* - Windows Phone 8
   * *W8* - Windows 8
