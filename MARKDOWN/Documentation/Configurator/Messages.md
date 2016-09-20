@@ -44,7 +44,7 @@ In this example, the edit dialog for the *AchievementEarnedMessage* is shown.
   * *KINDLE* - Amazon
   * *Viber*
 
-<q>**Viber Initiation!** Viber integration is available only on request. Please contact Viber directly requesting GameSparks integration if you are interested.</q>
+<q>**Viber Integration!** Viber integration is available only on request. Please contact Viber directly requesting GameSparks integration if you are interested.</q>
 * *Message* \- The message to be sent.
 * *Title* \- The title of the Message.
 * *Subtitle* \- The subtitle of the Message.
@@ -71,7 +71,7 @@ GameSparks allows you to create custom messages, which you can send from your Cl
 ![](img/Noti/9.png)
 
 * These Messages are uniquely identified using a *Short Code*.
-* The configuration details for a custom message are similar to standard message. (See previous [section](#Message Configuration) )  
+* The configuration details for a custom message are similar to standard message configuration. (See previous [section](#Message Configuration) )  
 
 ## Different Messages for Different Players
 
