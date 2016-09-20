@@ -36,27 +36,31 @@ In this example, the edit dialog for the *AchievementEarnedMessage* is shown.
 * *Suppress Push On Socket Send* \- If message is sent via the Socket, don't send it as Push as well.
 * *Include In Push Count* \- Should the message be included in Push Count.
 * *Expire After (Hours)* \- Enter the expiry time in hours for the message. The system will attempt to send the message to recipients for this period. If a player is not connected when the message is issued and they re-connect within the expiry period, they will get the message when they re-connect. If a player does not re-connect within the expiry period, they will not get the message. (In either case, whether a player does or doesn't receive the message, this will be logged by the system.)
-* *Device Types* - If you have configured the message as a push notification, enter the device types for the notification. The supported device types are:
+* *Device Types* - The supported device types are:
   * *WP8* - Windows Phone 8
   * *W8* - Windows 8
   * *IOS* - Apple
   * *ANDROID* - Google
   * *KINDLE* - Amazon
+  * *Viber*
+
+<q>**Viber Initiation!** Viber integration is available only on request. Please contact Viber directly requesting GameSparks integration if you are interested.</q>
 * *Message* \- The message to be sent.
 * *Title* \- The title of the Message.
 * *Subtitle* \- The subtitle of the Message.
 * *Advanced configuration* \- See Step 4 below.
 * *Segment configuration* \- Click the plus ![](/img/fa/plus.png) icon to configure any segment configuration you want to apply to the message. (See [section](#Different Messages for Different Players) below)
 
-*4.* If you want to configure advanced JSON configuration for the message, click in the *Advanced configuration* strip to expand it:
+*4.* If the standard configuration available for your push notification messages doesn't give you what you want, you can use *Advanced configuration* for the following 3 supported providers. Click in the *Advanced configuration* strip to expand it:
 
 ![](img/Noti/8.png)
 
-You can enter your custom JSON for three supported integrations:
-* *IOS* for Apple
-* *Kindle* for Amazon
-* *Android* for Google
+Here are some examples of the formats you can use for these providers:
+* *iOS for Apple* \- {"aps":{"badge":1,"alert":"${summary}"}}
+* *Kindle for Amazon* \- {"expiresAfter":86400,"data":{"Message":"${Summary}","Title":"${title}", "messageId":"57dbcf149f68b50583cf9ab5","SubTitle":"${subtitle}" ,"MessageCount":21}}
+* *Android for Google* \- {"tickerText" : "${summary}" , "subtitle" : "${subtitle}" , "title" : "${title}" , "messageCount" : "1" , "messageId" : "57dbcfbb9f68b50583cf9ab7"}
 
+<q>**Provider Documentation!** Please read the relevant provider-side documentation to ensure the message format you use is valid for the receiving device.</q>
 
 ## Script Message Extensions
 
@@ -66,12 +70,12 @@ GameSparks allows you to create custom messages, which you can send from your Cl
 
 ![](img/Noti/9.png)
 
-* These Messages are uniquely identified using a Short Code.
+* These Messages are uniquely identified using a *Short Code*.
 * The configuration details for a custom message are similar to standard message. (See previous [section](#Message Configuration) )  
 
 ## Different Messages for Different Players
 
-You can use segmentation to send players different messages using *Segment configuration*. For example, you can create a segment for French players and send these players French language versions of messages:
+You can use segmentation to send players different messages using *Segment Configuration*. For example, you can create a segment for French players and send these players French language versions of messages:
 
 ![](img/Noti/4.jpg)
 

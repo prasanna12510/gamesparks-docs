@@ -8,7 +8,9 @@ src: /Documentation/Configurator/Achievements.md
 GameSparks Achievements support the rewarding of players for accomplishments within the game. An Achievement is highly configurable with respect to both the reward and the criteria for when it is delivered:
 * **Task-based.** Traditional Achievements systems are supported where Virtual Goods (for example, badges or items) are won for completion of particular tasks or won for completion of a combination of tasks.
 * **Extended.** Extended Achievement systems are supported, such as level completion or XP progress bonuses, basic 'crafting', and rewards for breaking into the top [x] of a Leaderboard, and so on.
-* **Cross-platform.** Achievements are cross-platform, which affords a significant convenience benefit - you don't have to set them up in each store - and which supports cross-platform play, because game-progress can be tracked and the reward can be used across multiple platforms.
+* **Cross-platform.** Achievements are cross-platform, which affords significant benefits:
+  * You don't have to set up separate Achievements in each store, which supports cross-platform play.
+  * Game-progress can be tracked and the reward can be used across multiple platforms.
 
 
 * **Achievements and Rewards.**

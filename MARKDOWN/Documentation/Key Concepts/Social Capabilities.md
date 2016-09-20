@@ -1,4 +1,5 @@
 ---
+nav_sort: 6
 src: /Documentation/Key Concepts/Social Capabilities.md
 ---
 
