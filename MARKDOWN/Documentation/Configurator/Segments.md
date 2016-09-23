@@ -7,7 +7,7 @@ src: /Documentation/Configurator/Segments.md
 
 ## What are Segments?
 
-Segments allow you to create partitions for different users and apply various rules to different areas of the platform. Segments offer you an extra dimension of flexibility for customizing player experience and behaviour.
+Segments allow you to create partitions for different users and apply various rules to different areas of the platform. Segments offer you an extra dimension of flexibility for customizing player experience and behavior.
 
 ## Example
 

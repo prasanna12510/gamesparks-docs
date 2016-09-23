@@ -9,7 +9,7 @@ You can use Callbacks to run separate, customized Cloud Code scripts against dif
 
 <q>**Multiple Callback URLs!** Previously, only one Callback URL could be created per game.  You can now create as many custom Callback URLs as there are custom Credentials.</q>
 
-*1.* Before we can create a Callback URL script, first we will need to create a customised Credential. In the portal, go to *Configurator > Integrations*.
+*1.* Before we can create a Callback URL script, we'll first need to create a customised Credential. In the portal, go to *Configurator > Integrations*.
 
 *2* To add two new custom Credentials, click the Plus ![](/img/fa/plus.png) icon on *Credentials*:
 

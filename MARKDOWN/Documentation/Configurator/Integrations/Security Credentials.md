@@ -5,9 +5,10 @@ src: /Documentation/Configurator/Integrations/Security Credentials.md
 
 # Security Credentials
 
-Credentials allow you to configure permissive role types for Players within the game.  You can configure each Credential to control which requests and responses are authorized for use when connecting to the GameSparks API platform.
-
-As a quick example, you might want to set up a Credential which you can use against players to block their access to finding pending Matches (FindPendingMatchesRequest) or allow them only the ability to change their details (ChangeUserDetailsRequest).
+Credentials allow you to configure permissive role types for Players within the game.  You can configure each Credential to control which requests and responses are authorized for use when connecting to the GameSparks API platform:
+* Credentials are passed-in when a connection is made to the platform.
+* If you've created a Credential and set it as a Player type, when any player with this Credential connects to the platform the request/response permissions you've configured for the Credential are applied to the player's requests:
+  * For example, you might want to set up a Credential which you can use against players to block their access to finding pending Matches (FindPendingMatchesRequest) or allow them only the ability to change their details (ChangeUserDetailsRequest).
 
 To create and edit Credentials, go to *Configurator > Integrations*. Existing Credentials are listed:
 
@@ -19,7 +20,7 @@ There are two ways in which you can configure Credentials for your game:
 * Select Credential type.
 * Enable Credential requests.
 
-### Credential Types
+### Selecting Credential Types
 
 When you create or edit a custom Credential there are three key settings you can use to determine the type of Credential and ensure the Credential suits your purposes:
 * *Player* - If you select this, it means that the Credential will be used against players. For example, you could use a Player Credential to deny a player access to the matchmaking requests without affecting their permissions to other requests available within the API platform
@@ -28,11 +29,11 @@ When you create or edit a custom Credential there are three key settings you can
 
 There are certain rules applied to the combination of Credential types:
 * A Player Credential MUST also be a Listener type.
-* However, a Listener Credential does not necessarily need to also be a Player Credential, although it can be.
+* However, a Listener Credential does not necessarily need to also be a Player Credential.
 
 <q>**Note:** You cannot alter the type settings for a System Credential!</q>
 
-### Credential requests
+### Enabling Credential Requests
 
 When you create or edit a Credential, there are four tabs for different requests categories, which you can use to control the requests allowed for the Credential:
 * *Requests* - Generic game requests.

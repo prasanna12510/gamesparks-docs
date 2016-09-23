@@ -5,7 +5,7 @@ src: /Documentation/Configurator/Multiplayer/Challenges.md
 
 # Challenges
 
-Challenges allow you to set up multiplayer game mechanics to encourage players to get their friends to play with each other. Challenges can be configured with a wide variety of options. They can be between one or more players and they can have start and end dates associated with them. You can also limit the number of game plays that can be posted against each Challenge. The platform manages all of this for you and issues appropriate messages which are triggered by challenge events.
+Challenges allow you to set up multiplayer game mechanics to encourage players to get their friends to play with each other. Challenges can be configured with a wide variety of options. They can be between one or more players and they can have start and end dates associated with them. You can also limit the number of game plays that can be posted against each Challenge. The platform manages all of this for you and issues appropriate messages which are triggered by Challenge Events.
 
 ## Managing Challenge configurations
 
@@ -33,4 +33,4 @@ To create a new Challenge, click the ![](/img/fa/plus.png) icon and you will be
   * *Turn/Attempt Consumers* \- If you have set the *Turn Based* switch to true (or create the challenge with a max attempt set), you can have turns/attempts consumed by any event selected in this list.
   * *Leaderboard* \- The outcome of a challenge can be determined by a specially configured Leaderboard or a custom Cloud Code Script. Use this drop down to pick the appropriate option.
   * *Global* \- If this is off, only [LogChallengeEventRequests](/API Documentation/Request API/Multiplayer/LogChallengeEventRequest.md) will affect this challenge.
-  * *First to achievement* \- If this field is set, the winner will be the first to reach the selected achievement.
+  * *First to achievement* \- If this field is set, the winner of the Challenge will be the first to reach the selected Achievement. Note that the Achievements available for selection are those that are configured to be triggered by the Leaderboard you have selected for the Challenge.
