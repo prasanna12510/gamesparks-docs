@@ -48,7 +48,7 @@ The HUD will therefore look something like this:
 To set up your HUD like this, follow these steps:
 1.	Add a new *UI Panel* to the ‘Main Canvas’ object in the scene hierarchy. This panel should cover the screen from left to right, but only come down a few pixels (we used a height of 50 pixels).
 2.	For each player, add a new empty *GameObject* and name the object. Space these objects equidistant from each other along the HUD bar.
-3.	Add two *UI Text* objects to each player’s empty *GameObject* and name them ‘player_name’ and ‘player_score’. The only other thing we've done for these text-fields is centre the text and align them to fit one above the other.
+3.	Add two *UI Text* objects to each player’s empty *GameObject* and name them ‘player_name’ and ‘player_score’. The only other thing we've done for these text-fields is center the text and align them to fit one above the other.
 
 ### Sorting Layers
 
@@ -70,7 +70,7 @@ To start:
 * We’ll create a new empty *GameObject* in our scene hierarchy and name it ‘Game Controller’. This is where all our game-elements will be kept.
 * Inside this game object, we need to create another empty *GameObject* called ‘Level Obstacles’. All objects which the player’s tank cannot pass through will go here.
 
-The obstacles we are going to create will be very simple: they will just be a sprite with a *BoxCollider2D* component attached. We’ve also added the *pixel_White* sprite to the object. This will allow you to add whatever colour you wish to the sprite.
+The obstacles we are going to create will be very simple: they will just be a sprite with a *BoxCollider2D* component attached. We’ve also added the *pixel_White* sprite to the object. This will allow you to add whatever color you wish to the sprite.
 
 ![](img/RTGame/4.png)
 
@@ -147,7 +147,7 @@ We also need to add a tag to the tank, which we'll use later for collision detec
 
 ### Shell Spawn-Point
 
-We are going to add an empty *GameObject* to our tank now. This game-object gives the shells we fire a spawning position instead of spawning them from the tank’s centre. We'll put this empty *GameObject* at the barrel of the tank’s gun, so there is some distance from the tank.
+We are going to add an empty *GameObject* to our tank now. This game-object gives the shells we fire a spawning position instead of spawning them from the tank’s center. We'll put this empty *GameObject* at the barrel of the tank’s gun, so there is some distance from the tank.
 
 ![](img/RTGame/12.png)
 
@@ -158,7 +158,7 @@ We also need to give this tank its own class so create a new C# script called Ta
 
 ### Tank Prefabs
 
-The only thing left to do is to create four prefabs for each colour of tank and for each prefab add the correct sprite. Then rename your tank-prefabs to match the colours:
+The only thing left to do is to create four prefabs for each color of tank and for each prefab add the correct sprite. Then rename your tank-prefabs to match the colors:
 
 ![](img/RTGame/13.png)
 
@@ -169,7 +169,7 @@ The tank object is now setup and ready. We will move onto the *Shell* object.
 
 These are the objects that are being fired by the tanks. You can call them shells or bullets or whatever you prefer. The important thing is that these objects are a simple sprite with a small box-collider and a rigidbody.
 
-Notably, we want these objects to bounce off the walls as they do in Atari’s TANK! To achieve this behaviour, we'll create a physics material and apply this to the rigidbody.
+Notably, we want these objects to bounce off the walls as they do in Atari’s TANK! To achieve this behavior, we'll create a physics material and apply this to the rigidbody.
 
 ### Shell Sprite
 
@@ -247,7 +247,7 @@ After the singleton, all of the class members we need to set up the game-control
 
 |Class Member   |Description   |
 |---|---|--------------------------------|
-|*public GameObject[] tankPefabs* |We’ll load each tank-prefab into the script through the editor. This will then be used to assign colours to each player.   |
+|*public GameObject[] tankPefabs* |We’ll load each tank-prefab into the script through the editor. This will then be used to assign colors to each player.   |
 |*private Tank[] playerTanksList*    |Each time we create a new tank for the player and set it up, we'll add it to this list. Later we'll use this list to update tank positions and rotations and make sure each player has been assigned the right points. We'll also create a getter for this list so we can access it from other classes.|
 |*public Text[] playerKillsHUDList, playerNamesHudList* |These represent the player_score and player_names text-fields in the HUD panel. We'll add these manually through the editor to make sure that the order of players in the HUD appears the same for each player.|
 |*private static Shell[] shellPool = new Shell[13]* |This is the object pool for all the shells our players can instantiate from. Instead of creating a new shell, we'll replace objects in this pool thereby reducing overheads for instantiation and garbage collection. For this example, we've decided on 13 shells in the pool. This is calculated from the fire rate of 1 shell per second, and each shell has a lifetime of two seconds. So, each player can have a total of 2 shells in the scene at any time, with a slight possibility of an extra shell (if the fire-rate overlaps). So, with 4 players, there can be a total 12 shells in the scene at any time (plus one extra for safety).|
@@ -466,7 +466,7 @@ This section has several steps:
 2.	We'll then start to loop through the player list.
 3.	Inside the player-list loop, we'll start to loop through the spawner-list.
 4.	We'll check that the player’s peerId corresponds to the spawner you have set for that player.
-5.	Instantiate a new tank GameObject using the prefab at the same index as the current player in the loop (this will be the same for every user so all the coloured tanks will correspond to the same players in each instance of the game).
+5.	Instantiate a new tank GameObject using the prefab at the same index as the current player in the loop (this will be the same for every user so all the colored tanks will correspond to the same players in each instance of the game).
 6.	Set the name of the tank to be the player’s peerId. We'll use this to find matching tanks from received packet data later on using the packet’s SenderId.
 7.	Check to see if the player in the loop is the current player (that is, the peerId of this player matches the peerId of the player we are at in the loop). Using this info we can set up the tank as a player or opponent.
 8.	Add the newly created tank to the corresponding reference in the playerTankList.
@@ -500,7 +500,7 @@ for (int playerIndex = 0; playerIndex < GameSparksManager.Instance ().GetSession
 
 ```
 
-This code uses the indexes of the player-list to set the correct HUD components. This is because we know that the order of the player-list for everyone running the game is the same. So, if we use that as a constant, we know that each tank will have the right colour, and each player’s HUD will be correct in each instance.
+This code uses the indexes of the player-list to set the correct HUD components. This is because we know that the order of the player-list for everyone running the game is the same. So, if we use that as a constant, we know that each tank will have the right color, and each player’s HUD will be correct in each instance.
 
 ### Clearing HUD Elements for Players not in the Session
 
@@ -520,7 +520,7 @@ Our game example is setup for 4 players. But if there are not 4 players connecte
 
 ### Testing
 
-Once you have all the set up code in place and all your prefabs and object-arrays are linked through the editor, we can test out the code. If everything is set up correctly, you'll see 4 tanks of different colours appear at the spawn-points for each of your game instances. You should also see that the position of each colour of tank is the same for each game:
+Once you have all the set up code in place and all your prefabs and object-arrays are linked through the editor, we can test out the code. If everything is set up correctly, you'll see 4 tanks of different colors appear at the spawn-points for each of your game instances. You should also see that the position of each color of tank is the same for each game:
 
 ![](img/RTGame/18.png)
 
@@ -561,7 +561,7 @@ private bool isPlayer;
 
 #### Predictive Movement
 
-Predictive movement will be used to make sure our tanks have smooth movement behaviours between position updates coming in from other players. This involves quite a few variables. So, we set those here and we'll come back to explaining what each one is used for later:
+Predictive movement will be used to make sure our tanks have smooth movement behaviors between position updates coming in from other players. This involves quite a few variables. So, we set those here and we'll come back to explaining what each one is used for later:
 
 ```
 
@@ -578,7 +578,7 @@ public float gotoRot;
 
 For this we are going to need a bool to tell us whether or not we can fire. We'll also need a reference to that shell-spawn position game-object we added to tank, and finally we will need a public *Color* variable.
 
-The colour variable is going to be used to apply player colours to the shells so opponents can tell the difference between their own shells and their opponent’s. We will set this on each prefab from the editor:
+The color variable is going to be used to apply player colors to the shells so opponents can tell the difference between their own shells and their opponent’s. We will set this on each prefab from the editor:
 
 ```
 
@@ -631,7 +631,7 @@ Together, these variables are as follows:
     private Transform shellSpawnPos;
     /// <summary>dictates when the player can fire a shell</summary>
     private bool playerCanFire = true;
-    /// <summary>This is the colour of the shells the player fires. Set in the editor</summary>
+    /// <summary>This is the color of the shells the player fires. Set in the editor</summary>
     public Color tankCol;
     #endregion
     // PLAYER RESET INVINCIBILITY //
@@ -926,7 +926,7 @@ The following code will go in the *UpdateOpponentTanks()* method of your *GameCo
 public void UpdateOpponentTanks(RTPacket _packet){
     for (int i = 0; i < playerTanksList.Length; i++) {
         if (playerTanksList[i].name == _packet.Sender.ToString()) { // check the name of the tank matches the sender
-            // we calculate the new position the tank should go to be the position they are at plus the velocity. That is, their position plus the distance they travelled according to their last speed
+            // we calculate the new position the tank should go to be the position they are at plus the velocity. That is, their position plus the distance they traveled according to their last speed
             playerTanksList[i].goToPos = (new Vector2(_packet.Data.GetVector4(1).Value.x, _packet.Data.GetVector4(1).Value.y)) + (new Vector2(_packet.Data.GetVector4(1).Value.z, _packet.Data.GetVector4(1).Value.w));
             playerTanksList [i].gotoRot = _packet.Data.GetFloat (2).Value;
             break; // break, because we don’t need to update any other tanks.
@@ -1001,7 +1001,7 @@ We therefore need a *ResetShell()* method so that in the next section we can fir
 This *ResetShell()* method is simple. We pass it in:
 1.	A unique-Id (so that we can easily identify shells), which becomes its name.
 2.	The peerId of the player firing it, which we call the ownerId.
-3.	The Colour of the owner, so we can colour the shell the same as the tank who fired it.
+3.	The Color of the owner, so we can color the shell the same as the tank who fired it.
 4.	The position and rotation of the shell.
 
 Two final steps:
@@ -1015,14 +1015,14 @@ Two final steps:
 /// </summary>
 /// <param name="_ownerId">Owner identifier.</param>
 /// <param name="_uid">Uid.</param>
-/// <param name="_col">Colour</param>
+/// <param name="_col">Color</param>
 /// <param name="_pos">Position.</param>
 /// <param name="_rot">Rotation</param>
 public void ResetShell(int _ownerId, string _uid, Color _col, Vector3 _pos, float _rot){
 
     gameObject.name = _uid; // set the uid for the name
     ownerPeerId = _ownerId; // set the owner
-    GetComponent<SpriteRenderer> ().color =  _col; // set the colour to the colour of the owner
+    GetComponent<SpriteRenderer> ().color =  _col; // set the color to the color of the owner
 
     transform.position = _pos; // set the position
     transform.eulerAngles = new Vector3(0, 0, _rot); // set the rotation
@@ -1088,7 +1088,7 @@ public void InstantiateShell(int _ownerPeerId, string _uid){
 
     for (int i = 0; i < GameController.GetShellPool().Length; i++) {
         if (!GameController.GetShellPool()[i].gameObject.activeSelf) { // find an inactive shell
-            // Update the shell position and rotation and pass in the UID, ownerId, and colour so we can reset those too //
+            // Update the shell position and rotation and pass in the UID, ownerId, and color so we can reset those too //
             GameController.GetShellPool () [i].ResetShell (_ownerPeerId, _uid, tankCol, shellSpawnPos.position, this.transform.eulerAngles.z);
             GameController.GetShellPool () [i].GetComponent<Rigidbody2D> ().AddForce (-this.transform.up * 200f, ForceMode2D.Force);
             break;
@@ -1360,9 +1360,9 @@ private IEnumerator invincibility;
 
 
 
-### Flashing Colours to Indicate Invincibility
+### Flashing Colors to Indicate Invincibility
 
-And now we are going to add the code to make the tank flash colours while it is invincible. This is pretty simple. We just create a value from a sine function, which will go between two points. In our case these two points will represent a colour between white and red. The tank will therefore flash between its normal colour and red. This code goes in the *Update()* method of your *Tank.cs* class:
+And now we are going to add the code to make the tank flash colors while it is invincible. This is pretty simple. We just create a value from a sine function, which will go between two points. In our case these two points will represent a color between white and red. The tank will therefore flash between its normal color and red. This code goes in the *Update()* method of your *Tank.cs* class:
 
 ```
 
@@ -1518,7 +1518,7 @@ This will go into the *OnOpponentDisconnected()* method we created earlier in th
 
 ```
 
-And next we need to create this *DisableTank()* method in our *Tank.cs* class. This method will change the box-collider to a trigger and reset the colour, as we mentioned above. However, it will also need to disable the invincibility of the tank using the *StopCoroutine()* method:
+And next we need to create this *DisableTank()* method in our *Tank.cs* class. This method will change the box-collider to a trigger and reset the color, as we mentioned above. However, it will also need to disable the invincibility of the tank using the *StopCoroutine()* method:
 
 ```
 

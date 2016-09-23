@@ -73,7 +73,7 @@ In your project's build file, you need to include extra modules which will allow
 
 #### Refresh your visual studio project through the editor
 
-After you include the modules into your project refresh your C++ files through the Editor so the changes are recognised in your project. Failing to do this step will result in your "Online.h" and "OnlineSubsystemFacebook.h" not being recognised.
+After you include the modules into your project refresh your C++ files through the Editor so the changes are recognized in your project. Failing to do this step will result in your "Online.h" and "OnlineSubsystemFacebook.h" not being recognized.
 
 
 ![](img/UE4FB/1.jpg)
@@ -201,7 +201,7 @@ void UFBAPIComponent::ReturnAuthToken(int32 LocalUserNum, bool bWasSuccessful, c
 
 void UFBAPIComponent::FacebookLogin(FString UserName, FString Password)
 {
-	//Exposed to Blueprint so UserName and Password can be passed in. Account type must be 'facebook' so the subsystem recognises which authentication process to use.
+	//Exposed to Blueprint so UserName and Password can be passed in. Account type must be 'facebook' so the subsystem recognizes which authentication process to use.
 	NewAccount = new FOnlineAccountCredentials;
 	NewAccount->Id = UserName;
 	NewAccount->Token = Password;

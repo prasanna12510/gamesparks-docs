@@ -475,7 +475,7 @@ In order to test that you've successful made a match, you'll have to be able run
 
 For a windows machine it is not difficult to run multiple instances. However, on a mac you will have to run each instance from the terminal. There is an account of how to do this available [here](http://osxdaily.com/2011/05/11/multiple-instances-application-mac/). It is not a difficult process so don't worry.
 
-We suggest that you run one instance as the editor, and 3 separate instances. This presents a problem, however, because the default behaviour for the Unity editor is to disconnect web-sockets when the app is not in focus. Because you'll have to go from window-to-window logging in and searching for the match, this will disconnect successive instances from GameSparks when they are not in focus and the match will therefore fail. To prevent this, you can set the app to 'run In Background' in the player settings.
+We suggest that you run one instance as the editor, and 3 separate instances. This presents a problem, however, because the default behavior for the Unity editor is to disconnect web-sockets when the app is not in focus. Because you'll have to go from window-to-window logging in and searching for the match, this will disconnect successive instances from GameSparks when they are not in focus and the match will therefore fail. To prevent this, you can set the app to 'run In Background' in the player settings.
 
 We also suggest that, for initial testing, you make the windows smaller than usual. This allows you to easily navigate between them when setting up a match. In this example, we used 800x600 resolution so I could fit at least 2 instances on the same screen.
 

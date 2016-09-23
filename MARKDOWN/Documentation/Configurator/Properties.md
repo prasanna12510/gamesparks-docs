@@ -7,13 +7,13 @@ src: /Documentation/Configurator/Properties.md
 
 ## What are Properties?
 
-GameSparks Properties give you a mechanism for customising your player experience without being restricted to platform capabilities. Using Properties, you can store your own JSON configuration on the portal and attach this to GameSparks objects, such as Virtual Goods, Achievements, and Leaderboards. Secondly, you can access Properties directly through Cloud Code and assign Property Sets to players through Cloud Code.
+GameSparks Properties give you a mechanism for customizing your player experience without being restricted to platform capabilities. Using Properties, you can store your own JSON configuration on the portal and attach this to GameSparks objects, such as Virtual Goods, Achievements, and Leaderboards. Secondly, you can access Properties directly through Cloud Code and assign Property Sets to players through Cloud Code.
 
 When you create a Property, you create an arbitrary data set which you can then exploit for custom game configuration.
 
 ## What are Property Sets?
 
-Property Sets allow you to group your Properties together. You can then segment your Property Sets and introduce an extra dimension to your Properties configuration. By segmenting Property Sets, you can ensure that different sets of Properties control game behaviour for different player groups.
+Property Sets allow you to group your Properties together. You can then segment your Property Sets and introduce an extra dimension to your Properties configuration. By segmenting Property Sets, you can ensure that different sets of Properties control game behavior for different player groups.
 
 <q>**Tutorial!** Check out our [Segmented Properties](/Tutorials/Analytics, Segmentation and Game Management/Working with Segmented Properties.md) tutorial for details on how to create and work with Properties and Property Sets and how to add segmented values for Properties.</q>
 

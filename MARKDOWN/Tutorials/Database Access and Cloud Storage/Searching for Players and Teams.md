@@ -48,7 +48,7 @@ Following the search against the Player collection, by changing the collection t
 
 Every game you make in GameSparks comes with our native *Players* management screen, which can be found in the Manage section:
 * You can quickly query to retrieve the players you're looking for or display every single player you have in your game's database.
-* Unlike the NoSQL Explorer you can view player's details through a graphical interface that you can customise yourself through our dynamic forms builder, for more info, click [here](/Documentation/Manage/Working with Dynamic Forms.md).
+* Unlike the NoSQL Explorer you can view player's details through a graphical interface that you can customize yourself through our dynamic forms builder, for more info, click [here](/Documentation/Manage/Working with Dynamic Forms.md).
 * You can also create a Team management screen that functions the same way.
 * To ensure that you get exactly what you want you can use rules or group of rules to narrow your search.
 

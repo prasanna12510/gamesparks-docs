@@ -15,6 +15,6 @@ We'll create a card game where each card represents a pre-defined type of card w
 
 * Second, how to configure for [matchmaking](/Tutorials/Multiplayer/Hearthstone Example/Matchmaking.md).
 
-* And finally, how to manage [challenge](/Tutorials/Multiplayer/Hearthstone Example/Challenge.md) behaviour in your game.
+* And finally, how to manage [challenge](/Tutorials/Multiplayer/Hearthstone Example/Challenge.md) behavior in your game.
 
 After following this worked example, you should be a lot more comfortable creating games on our platform and you get the chance to work on the platform and experiment with the overall framework.

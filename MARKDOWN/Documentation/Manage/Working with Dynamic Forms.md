@@ -117,7 +117,7 @@ Enter the details for the new Snippet:
 
 The *Snippet Builder* is divided into 4 quadrants:
 
-**1** - The top-left quadrant is for JavaScript or Cloud Code that provides the logic and behaviour of the Dynamic Form.
+**1** - The top-left quadrant is for JavaScript or Cloud Code that provides the logic and behavior of the Dynamic Form.
 
 **2** - The top-right quadrant is for adding HTML/GSML or Handlebars code that renders the view.
 

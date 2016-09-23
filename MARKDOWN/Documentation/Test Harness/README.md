@@ -74,7 +74,7 @@ The scenario is saved to *Scenarios* group of the *Request* section and can be 
 
 ## Recording multi-request scenarios
 
-You can also record a sequence of requests with the Test Harness. Enter the first request in to the *JSON* section then click the microphone ![](/img/fa/microphone.png) icon which will change colour to red to indicate that the Test Harness is now recording subsequent requests.
+You can also record a sequence of requests with the Test Harness. Enter the first request in to the *JSON* section then click the microphone ![](/img/fa/microphone.png) icon which will change color to red to indicate that the Test Harness is now recording subsequent requests.
 
 ![](img/TestHarness/9.png)
 

@@ -29,4 +29,4 @@ Sometimes it's not enough to have just a Preview and LIVE environment, and you m
 
 ![](img/MultiStage/4.png)
 
-<q>**Highly Recommended!** As a rule of good practice, it's highly recommended that you follow this process in the future when creating games.  This helps to keep stages organised and protected from differences in the configuration between the separate stages of the game's life cycle.</q>
+<q>**Highly Recommended!** As a rule of good practice, it's highly recommended that you follow this process in the future when creating games.  This helps to keep stages organized and protected from differences in the configuration between the separate stages of the game's life cycle.</q>

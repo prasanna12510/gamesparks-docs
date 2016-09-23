@@ -9,7 +9,7 @@ src: /Documentation/Configurator/Analytics.md
 
 The GameSparks platform aggregates a wide range of analytics data and provides you with key performance trends and metrics that track player interaction with your game:
 * Most common reporting requirements for monitoring player interaction and engagement are covered.
-* If you have any special needs for analytics reporting, you can build custom screens through the *Manage* section of the portal - see below *Customising Analytics Reporting*.
+* If you have any special needs for analytics reporting, you can build custom screens through the *Manage* section of the portal - see below *Customizing Analytics Reporting*.
 
 The Configurator *Analytics* page contains four tabs:
 * **Overview**
@@ -112,6 +112,6 @@ You can export the analytics data collection on which any of the analytics graph
 
  A Save/Open file dialog appears and you can save or view the JSON text file.
 
-## Customising Analytics Reporting
+## Customizing Analytics Reporting
 
 If you have any special needs for analytics reporting, you can build custom screens for querying the NoSQL database through the [Manage](/Documentation/Manage/README.md) section of the portal. From here, you can build ad hoc queries for analysis against raw request and response data.

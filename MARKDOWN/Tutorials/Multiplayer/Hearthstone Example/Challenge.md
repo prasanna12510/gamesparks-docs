@@ -334,4 +334,4 @@ This also is a challenge event because it needs to make a reference to the event
 ```
 In combination these events and structure can start and end a game the same way Hearthstone works. You can add more cards, more effects and extra functionality easily as this example was built with modularity and expansion in mind. You can test this using the two tabs that have our test harness open. Registering two players and pitting them against each other (both controlled by you).
 
-This concludes the Hearthstone example. You can customise, add, remove and reinvent this system. This is only one way of achieving this kind of game but playing around with our components and further understanding the way they work you can achieve brilliant results.
+This concludes the Hearthstone example. You can customize, add, remove and reinvent this system. This is only one way of achieving this kind of game but playing around with our components and further understanding the way they work you can achieve brilliant results.

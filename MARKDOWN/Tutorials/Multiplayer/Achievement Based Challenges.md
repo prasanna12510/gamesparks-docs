@@ -27,7 +27,7 @@ Create a Leaderboard for your challenge. Add a running total and set it to your 
 
 ### Achievement
 
-Create an achievement. Link this achievement to the challenge's Leaderboard. Add as many trigger data as you want to customise the trigger to your challenge. In our example we set the trigger to be between 500 to 600. If a player scores anything between 500 and 600 first during the challenge is the winner.
+Create an achievement. Link this achievement to the challenge's Leaderboard. Add as many trigger data as you want to customize the trigger to your challenge. In our example we set the trigger to be between 500 to 600. If a player scores anything between 500 and 600 first during the challenge is the winner.
 
 ![](img/AchievementBasedChallenges/3.jpg)
  

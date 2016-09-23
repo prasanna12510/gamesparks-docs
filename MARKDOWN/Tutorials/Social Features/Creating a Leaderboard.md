@@ -142,17 +142,17 @@ Note that as well as the request and response shown in the *Inspector* that ther
 
 ![](img/CreateUseLDR/12.png)
 
-To control the number of entries returned by the LeaderBoardDataRequest set the entryCount field to the required value. Also to view a different part of the Leaderboard set the offset field. The offset is relative to the current authorised player's position in the Leaderboard.
+To control the number of entries returned by the LeaderBoardDataRequest set the entryCount field to the required value. Also to view a different part of the Leaderboard set the offset field. The offset is relative to the current authorized player's position in the Leaderboard.
 
 ![](img/CreateUseLDR/13.png)
 
-If the current authorised player was linked to their Facebook account in the GameSparks platform and they had friends who had logged scores in this game then setting the social field value to true would return Leaderboard data containing just the player and player's friends. Now authenticate Player3.
+If the current authorized player was linked to their Facebook account in the GameSparks platform and they had friends who had logged scores in this game then setting the social field value to true would return Leaderboard data containing just the player and player's friends. Now authenticate Player3.
 
 ![](img/CreateUseLDR/14.png)
 
 ### Getting Players "Around Me"
 
-Authenticate Player3 (go to Authentication/AuthenticationRequest and then change the userName in the JSON request to "Player3"). Next select the AroundMeLeaderboardRequest on the Leaderboards menu. In the JSON request set the count field to 1 to show the Leaderboard entries either side of Player3 (the currently authorised player). Notice that the player's rank and score are included in the response.
+Authenticate Player3 (go to Authentication/AuthenticationRequest and then change the userName in the JSON request to "Player3"). Next select the AroundMeLeaderboardRequest on the Leaderboards menu. In the JSON request set the count field to 1 to show the Leaderboard entries either side of Player3 (the currently authorized player). Notice that the player's rank and score are included in the response.
 
 ![](img/CreateUseLDR/15.png)
 

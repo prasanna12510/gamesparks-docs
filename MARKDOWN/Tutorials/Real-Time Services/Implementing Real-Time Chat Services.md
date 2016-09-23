@@ -10,7 +10,7 @@ In the last tutorial, we looked at how we can setup real-time sessions as well a
 
 ## Introduction
 
-For this tutorial we will be focusing on building a very simple chat system. The chat dialogue will be toggled using a button in our game-scene and from there you will have the option to send messages to everyone or to a selected player.
+For this tutorial we will be focusing on building a very simple chat system. The chat dialog will be toggled using a button in our game-scene and from there you will have the option to send messages to everyone or to a selected player.
 
 ## Chat Manager Layout
 
@@ -223,7 +223,7 @@ Below is a list of the kind of data you can add using the RTData class.
 |**string**   |.SetString(index, string); |This allows you to send a string of characters.|
 |**Vector2**   |.SetVector2(index, new Vector2(x, y)); |This allows you to set a Unity Vector2 type which takes two floats for x and y. This can be used to send angles or 2-dimensional coordinates.|
 |**Vector3**   |.SetVector3(index, new Vector3(x, y, z)); |This allows you to set a Unity Vector3 type which takes three floats for x, y, z. This can be used to send transform elements such as position, scale and Euler-rotation.|
-|**Vector4**   |.SetVector4(index, new Vector4(x, y, z, w)); |This allows you to set a Unity Vector4 type which takes four floats for x, y, z, and w. This can be used to send Quaternions or colours.|
+|**Vector4**   |.SetVector4(index, new Vector4(x, y, z, w)); |This allows you to set a Unity Vector4 type which takes four floats for x, y, z, and w. This can be used to send Quaternions or colors.|
 |**RTVector**   |.SetRTVector(index, new RTVector(x, y, z, w)); |The RTVector class accepts floats for x, y, z, and w. The difference between this type and other Vector types is that RTVector can accept any or all of these floats.|
 |**RTData**   |.SetData(index, RTData.Get().SetInt(index, 1)); |Using the RTData class you can create nested data from without your initial RTData structure.|
 

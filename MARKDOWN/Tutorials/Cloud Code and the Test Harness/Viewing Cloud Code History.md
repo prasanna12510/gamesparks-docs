@@ -37,7 +37,7 @@ The Cloud Code History tool is designed to be read right-to-left:
 
 ### Using the Differences Drop-Down
 
-In the far-right of the screen, there is a drop-down labelled *Differences.* Depending on the comparison of Snapshots, it will show the items (and their location) that differ between those Snapshots. For example, new events added, edited events, and ones that have been removed:
+In the far-right of the screen, there is a drop-down labeled *Differences.* Depending on the comparison of Snapshots, it will show the items (and their location) that differ between those Snapshots. For example, new events added, edited events, and ones that have been removed:
 
 ![](img/CloudHistory/8.png)
 

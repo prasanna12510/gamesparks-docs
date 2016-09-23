@@ -55,7 +55,7 @@ Your game is now a mixed project and is ready to receive the GameSparks SDK file
 
 ## Mixed Project
 
-To enable the GameSparks SDK in your Unreal Engine Project, you'll have to grab the "*plugin*" folder from the SDK you've downloaded and move it to your Project folder. Be sure to rename this folder as "*Plugins*". If you don't, the folder will not be recognised by the Unreal Engine Compiler:
+To enable the GameSparks SDK in your Unreal Engine Project, you'll have to grab the "*plugin*" folder from the SDK you've downloaded and move it to your Project folder. Be sure to rename this folder as "*Plugins*". If you don't, the folder will not be recognized by the Unreal Engine Compiler:
 
 ![l](img/UR/3.png)
 

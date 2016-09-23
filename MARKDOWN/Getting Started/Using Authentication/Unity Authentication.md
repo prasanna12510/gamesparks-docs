@@ -7,7 +7,7 @@ src: /Getting Started/Using Authentication/Unity Authentication.md
 
 This tutorial will get your Unity project communicating with GameSparks by registering and authenticating players to your game.
 
-In order to have a player connect to your GameSparks game and start sending and receiving game-data, they first need to be authenticated with your GameSparks game. This is like being logged into GameSparks, and before you log in, the user needs to be registered so they are recognised by the game when they log in.
+In order to have a player connect to your GameSparks game and start sending and receiving game-data, they first need to be authenticated with your GameSparks game. This is like being logged into GameSparks, and before you log in, the user needs to be registered so they are recognized by the game when they log in.
 
 **Example Unity Authentication** code can be downloaded [here](http://repo.gamesparks.net/docs/tutorial-assets/UnityAuthentication_Tutorial.zip)
 

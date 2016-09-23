@@ -21,7 +21,7 @@ Now, when you send a request that has some Cloud Code written to it, the GameSp
 
 ![](img/GSDebugger/2.png)
 
-The Context menu (centre) is where all your variables and objects will be shown.  Because your variables and objects are defined, you will see their values being populated there. The buttons on the Context menu are:
+The Context menu (center) is where all your variables and objects will be shown.  Because your variables and objects are defined, you will see their values being populated there. The buttons on the Context menu are:
 
 ![](img/GSDebugger/3.png) **Continue** - This will continue execution of the current script until either a breakpoint is hit, or the script finishes.
 

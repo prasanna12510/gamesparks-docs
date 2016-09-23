@@ -7,7 +7,7 @@ src: /Tutorials/Multiplayer/Matching Players.md
 
 In this tutorial, we'll first explore the GameSparks matching framework to gain an understanding of how the system works to process and complete player matches on the basis of Match configurations.
 
-With this background in place, we'll move on to create a Match configuration with customised Thresholds in the GameSparks Portal. We'll then use this configuration to perform a Match in the Test Harness that will match Players in the game. A typical example of matching players is where you want to match players based on their similar skill level in your game so that players can play against someone of equal ability to make it more enjoyable for all.
+With this background in place, we'll move on to create a Match configuration with customized Thresholds in the GameSparks Portal. We'll then use this configuration to perform a Match in the Test Harness that will match Players in the game. A typical example of matching players is where you want to match players based on their similar skill level in your game so that players can play against someone of equal ability to make it more enjoyable for all.
 
 We'll also see how to enable and work with:
 * **Drop In/Drop Out** - Have matching players added to or removed from the Match after the Match is first made.

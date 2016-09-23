@@ -5,7 +5,7 @@ src: /Documentation/Configurator/Multiplayer/Matches.md
 
 # Matches
 
-Matchmaking allows players to be matched based on common attributes they share within a game. Using entirely customised threshold criteria and time-based rounds of matching, players can be strictly or loosely matched with an unlimited level of precision.
+Matchmaking allows players to be matched based on common attributes they share within a game. Using entirely customized threshold criteria and time-based rounds of matching, players can be strictly or loosely matched with an unlimited level of precision.
 
 <q>**Tutorial!** You can find a detailed tutorial [here](/Tutorials/Multiplayer/Matching Players.md) where you can also follow examples of how to create match configurations and use them to match players in the Test Harness.</q>
 
