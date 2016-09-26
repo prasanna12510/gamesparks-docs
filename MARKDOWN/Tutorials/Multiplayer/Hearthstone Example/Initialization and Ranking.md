@@ -1,9 +1,9 @@
 ---
 nav_sort: 1
-src: /Tutorials/Multiplayer/Hearthstone Example/Initialisation and Ranking.md
+src: /Tutorials/Multiplayer/Hearthstone Example/Initialization and Ranking.md
 ---
 
-# Initialisation and Ranking
+# Initialization and Ranking
 
 ## First, the Cards
 
@@ -33,7 +33,7 @@ The card consists of an Id which is automatically generated, you don't have to c
 
 ## Player Initilisation
 
-We'll need to initialise our players once they're registered by giving them a basic deck and a starting rank. To do this, we need to add scriptData to the player once they register. Head over to the cloud code section under the configurator tab on the platform. Once there, navigate to the responses tab, expand it and look for the RegistrationResponse. We edited our RestrationReponse to look like this:
+We'll need to initialize our players once they're registered by giving them a basic deck and a starting rank. To do this, we need to add scriptData to the player once they register. Head over to the cloud code section under the configurator tab on the platform. Once there, navigate to the responses tab, expand it and look for the RegistrationResponse. We edited our RestrationReponse to look like this:
 
 ```
 

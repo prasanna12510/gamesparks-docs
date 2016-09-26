@@ -171,7 +171,7 @@ As well as being able to establish manual authentication by using the Client ID 
 
 <q>**More Information!** For more information on how to set up Service accounts, go [here](https://developers.google.com/+/domains/authentication/delegation "Google Service accounts").</q>
 
-In order to utilise these features, our game must make use of an extra API - the *Google+ Domains API*.
+In order to utilize these features, our game must make use of an extra API - the *Google+ Domains API*.
 
 *18.* Go to the [Google *Developer* Console](https://console.developers.google.com "Google Developer Console").
 

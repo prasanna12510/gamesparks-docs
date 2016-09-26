@@ -7,7 +7,7 @@ src: /Tutorials/Multiplayer/Hearthstone Example/Matchmaking.md
 
 ## The Procedure
 
-The way we set up the matchmaking allows for the platform to automatically construct the right match, based on the players level. Once a match has been found the platform will automatically issue the correct challenge, accept it and initialise it.
+The way we set up the matchmaking allows for the platform to automatically construct the right match, based on the players level. Once a match has been found the platform will automatically issue the correct challenge, accept it and initialize it.
 
 ## Creating the Match and Challenge Examples
 
@@ -110,7 +110,7 @@ request.SendAs(chalData.challenge.challenged[0].id);
 
 ## Challenge Started Message
 
-After this, the challenge would have started and both players would receive the ChallengeStarted message. This is the perfect place to initialise the challenge and set it up for both our players. To avoid duplication we will only allow the challenger to set up the challenge.
+After this, the challenge would have started and both players would receive the ChallengeStarted message. This is the perfect place to initialize the challenge and set it up for both our players. To avoid duplication we will only allow the challenger to set up the challenge.
 
 ```
 //Declare challenge
@@ -163,7 +163,7 @@ This will construct the game itself with all the details, which contains:
 2. The currentHand which will represent the player's hand. Consists of two objects, one hand for either player.
 3. playerStats which will house information about mana, health, how many cards pulled, if player has pulled a card this round and if there's a taunt card protecting the player.
 4. Each player will recieve 3 starter cards which will end up in the currentHand object.
-5. Saves all the initialised values.
+5. Saves all the initialized values.
 
 ## pullCard Module
 
@@ -198,4 +198,4 @@ Spark.setScriptData("result", randCard.type + " was pulled from deck");
 
 ```
 
-This concludes the match making part of the tutorial. Now your players will be matched and a challenge will be started and initialised ready for the game to take part. Next tutorial will walk you through getting the players to take turns and use their cards.
+This concludes the match making part of the tutorial. Now your players will be matched and a challenge will be started and initialized ready for the game to take part. Next tutorial will walk you through getting the players to take turns and use their cards.

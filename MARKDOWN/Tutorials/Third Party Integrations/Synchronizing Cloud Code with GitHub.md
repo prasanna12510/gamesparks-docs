@@ -111,7 +111,7 @@ By doing this, you will now be able to select your data from your GitHub account
 
 ![](img/GitSynch/11.png)
 
-*15.* Once the selections are made, select *Preview*. The modal form will close and another window will open where you can review what is to be imported. The items listed will be colour coded based on what their status will be after the import. Here are some examples:
+*15.* Once the selections are made, select *Preview*. The modal form will close and another window will open where you can review what is to be imported. The items listed will be color coded based on what their status will be after the import. Here are some examples:
 
 * Green : *Cloud Code that does not already exist in the game.*
 * Blue : *Cloud Code that has changed since the import.*

@@ -57,7 +57,7 @@ UGameSparksComponent* GameSparksComp;
 
 AMyGameMode::AMyGameMode() {
 
-	//Initialise GameSparksComponent used to connect
+	//Initialize GameSparksComponent used to connect
 	GameSparksComp = CreateDefaultSubobject<UGameSparksComponent>(TEXT("GSparkComp"));
 
 }

@@ -33,7 +33,7 @@ The Context menu (center) is where all your variables and objects will be shown.
 
 ![](img/GSDebugger/7.png) **Stop** - Stops the debugging session, the script will be executed and the debug session will stop.
 
-Objects that you create in your Cloud Code will appear as hierarchical trees in the context menu so you can expand and minimise them to view their variables. All requests are also shown as hierarchical trees in which you can check the responses by expanding them in the Context menu.  Responses to [SendRequests](/API Documentation/Cloud Code API/Spark.md) within Cloud Code viewed within the Debugger are displayed similar to the way the Test Harness Inspector displays them.
+Objects that you create in your Cloud Code will appear as hierarchical trees in the context menu so you can expand and minimize them to view their variables. All requests are also shown as hierarchical trees in which you can check the responses by expanding them in the Context menu.  Responses to [SendRequests](/API Documentation/Cloud Code API/Spark.md) within Cloud Code viewed within the Debugger are displayed similar to the way the Test Harness Inspector displays them.
 
 Here, the Cloud Code calls an [AuthenticationRequest](/API Documentation/Request API/Authentication/AuthenticationRequest.md) and an AuthenticationResponse. The values attributed to the Request and Response are shown as child properties of that object:
 
@@ -58,7 +58,7 @@ If the Debugger has been inactive or idle for 2 minutes, the GameSparks Debugger
 Imposing this time-out is in everyone's interest:
 * It's reasonable to assume that you've finished debugging if there's no activity after 2 minutes.
 * Any infinite loops you may have gotten in are terminated promptly!
-* The socket connections we keep open internally while the Debugger is in use consume a lot of platform resources. Letting these close automatically and freeing-up these resources ensures the platform's performance is optimised.
+* The socket connections we keep open internally while the Debugger is in use consume a lot of platform resources. Letting these close automatically and freeing-up these resources ensures the platform's performance is optimized.
 
 
 ### Break on Error

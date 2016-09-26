@@ -5,7 +5,7 @@ src: /Tutorials/Game Engine Integrations/CPP Quick Start.md
 
 # Cpp Quick Start
 
-## Initialisation
+## Initialization
 
 Include the following, each engine will have a slight variation:
 

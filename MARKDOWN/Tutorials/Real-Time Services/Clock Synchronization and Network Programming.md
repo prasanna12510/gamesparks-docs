@@ -169,7 +169,7 @@ As described in the section above, syncing our clock requires the following step
 6.	We can then use the *serverDelta* plus the latency to find and adjust any time coming from the server to what it is when we received it, therefore syncing all clients to the same time.
 
 
-<q>**Notes:** There is one issue not dealt with in this tutorial and which should be noted. Internet speeds do vary, and with someone using mobile-internet, their bandwidth could vary widely if, for example, they are travelling on a train. Therefore, it is advised that these metrics disregard packets, which have latency above a certain threshold. When latency is too high for one player, it lowers the experience for all other players. To avoid this, the latency is checked across several packets and averaged. Any packets higher than the median latency are automatically disregarded. And when average latency gets too high, the player should be disconnected.</q>
+<q>**Notes:** There is one issue not dealt with in this tutorial and which should be noted. Internet speeds do vary, and with someone using mobile-internet, their bandwidth could vary widely if, for example, they are traveling on a train. Therefore, it is advised that these metrics disregard packets, which have latency above a certain threshold. When latency is too high for one player, it lowers the experience for all other players. To avoid this, the latency is checked across several packets and averaged. Any packets higher than the median latency are automatically disregarded. And when average latency gets too high, the player should be disconnected.</q>
 
 ### Step 1 - Send a Packet with the Client's Local Time
 

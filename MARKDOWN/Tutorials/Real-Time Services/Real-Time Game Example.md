@@ -1252,7 +1252,7 @@ public void UpdateOpponentShells(RTPacket _packet){
 
 ### Testing
 
-You should now be able to test your shell collisions. If everything is set up right, you should see the shells being instantiated in the right place, travelling in the same direction for all instances of the game, and then altering their course whenever they hit a barrier.
+You should now be able to test your shell collisions. If everything is set up right, you should see the shells being instantiated in the right place, traveling in the same direction for all instances of the game, and then altering their course whenever they hit a barrier.
 
 #### Possible Improvements
 

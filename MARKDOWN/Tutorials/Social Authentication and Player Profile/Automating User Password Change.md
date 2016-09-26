@@ -105,7 +105,7 @@ If the email passed in is linked to an account, then:
 
         myGrid.addTo( email , name ); //The email to send the message to and the name of the user
 
-        myGrid.setFrom("Email", "Name"); //Here you'd leave your organisation or personal email
+        myGrid.setFrom("Email", "Name"); //Here you'd leave your organization or personal email
 
         myGrid.setSubject("Subject"); //The subject of your email
 

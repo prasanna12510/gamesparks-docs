@@ -40,7 +40,7 @@ This is used for the example project, but it is assumed you will secure the secr
 
 ## Initialising the SDK
 
-There are two initialisation methods in the SDK, one for using the preview servers (for your internal use and testing) and another for the live players. It's important that you don't try to use the preview servers for your live players because the preview servers have a limit of 50 concurrent connections for each game.
+There are two initialization methods in the SDK, one for using the preview servers (for your internal use and testing) and another for the live players. It's important that you don't try to use the preview servers for your live players because the preview servers have a limit of 50 concurrent connections for each game.
 
 Firstly, you need to create a GameSparks object:
 
@@ -49,7 +49,7 @@ Firstly, you need to create a GameSparks object:
     var gamesparks = new GameSparks();
 ```
 
-Once you have an object reference, you can initialise the SDK. To do this, you need to call one of the initialisation methods with an options object. To initialise against the preview servers use the following function:
+Once you have an object reference, you can initialize the SDK. To do this, you need to call one of the initialization methods with an options object. To initialize against the preview servers use the following function:
 
 ```
     gamesparks.initPreview({
@@ -60,7 +60,7 @@ Once you have an object reference, you can initialise the SDK. To do this, you n
      });
 ```
 
-To initialise against the live servers use the following function:
+To initialize against the live servers use the following function:
 
 ```
     gamesparks.initLive({
@@ -71,7 +71,7 @@ To initialise against the live servers use the following function:
      });
 ```
 
-### Initialisation options
+### Initialization options
 
 *key* : The API Key of your game from the GameSparks developer portal.
 
@@ -87,9 +87,9 @@ To initialise against the live servers use the following function:
 *onInit* : A JavaScript function that is called when the SDK is finished initialising. You can use this function to perform a common task, such as authenticating the user when the SDK is ready.
 
 ```
-    //Callback to handle when the SDK is initialised and ready to go
+    //Callback to handle when the SDK is initialized and ready to go
     function onInit(){
-    	console.log("Initialised");
+    	console.log("Initialized");
     }
 ```
 

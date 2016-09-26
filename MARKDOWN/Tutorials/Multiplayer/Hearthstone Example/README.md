@@ -11,7 +11,7 @@ These tutorials provide a worked example of how to create a Hearthstone style ca
 
 We'll create a card game where each card represents a pre-defined type of card with attack, hit points, tier and effect stats. Two players are pitted against each other and use the cards to lower each other's health to 0. First player to reach 0 loses.
 
-* First, how to set up [player initialisation and the ranking system](/Tutorials/Multiplayer/Hearthstone Example/Initialisation and Ranking.md).
+* First, how to set up [player initialization and the ranking system](/Tutorials/Multiplayer/Hearthstone Example/Initialization and Ranking.md).
 
 * Second, how to configure for [matchmaking](/Tutorials/Multiplayer/Hearthstone Example/Matchmaking.md).
 

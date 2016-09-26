@@ -31,8 +31,8 @@ code | No | string | The access code is used by the client to make authenticated
 displayName | No | string | The display of the current player from Google Play. This will be used as the displayName of the gamesparks player if created (or syncDisplayname is true)
 doNotLinkToCurrentPlayer | No | boolean | Indicates that the server should not try to link the external profile with the current player.  If false, links the external profile to the currently signed in player.  If true, creates a new player and links the external profile to them.  Defaults to false.
 errorOnSwitch | No | boolean | Indicates whether the server should return an error if an account switch would have occurred, rather than switching automatically.  Defaults to false.
-googlePlusScope | No | boolean | Did you request the plus.login scope when you got the access code or authorisation token from Google? If this is true, we will fetch the user's google+ account and friends
-profileScope | No | boolean | Did you request the profile scope when you got the access code or authorisation token from Google? If this is true, we will fetch the user info by calling https://www.googleapis.com/oauth2/v1/userinfo?alt=json 
+googlePlusScope | No | boolean | Did you request the plus.login scope when you got the access code or authorization token from Google? If this is true, we will fetch the user's google+ account and friends
+profileScope | No | boolean | Did you request the profile scope when you got the access code or authorization token from Google? If this is true, we will fetch the user info by calling https://www.googleapis.com/oauth2/v1/userinfo?alt=json 
 redirectUri | No | string | Only required when the access code has been granted using an explicit redirectUri, for example when using the mechanism described in https://developers.google.com/+/web/signin/server-side-flow
 segments | No | JSON | An optional segment configuration for this request.
 switchIfPossible | No | boolean | Indicates that the server should switch to the supplied profile if it isalready associated to a player. Defaults to false.
@@ -109,12 +109,12 @@ redirectUri | REQUIRED | The redirectUri is required when using a code rather th
 		.SetSwitchIfPossible(switchIfPossible)
 		.SetSyncDisplayName(syncDisplayName)
 		.Send((response) => {
-		string authToken = response.AuthToken; 
-		string displayName = response.DisplayName; 
-		bool? newPlayer = response.NewPlayer; 
-		GSData scriptData = response.ScriptData; 
-		var switchSummary = response.SwitchSummary; 
-		string userId = response.UserId; 
+		string authToken = response.AuthToken;
+		string displayName = response.DisplayName;
+		bool? newPlayer = response.NewPlayer;
+		GSData scriptData = response.ScriptData;
+		var switchSummary = response.SwitchSummary;
+		string userId = response.UserId;
 		});
 
 ```
@@ -126,7 +126,7 @@ redirectUri | REQUIRED | The redirectUri is required when using a code rather th
 	import com.gamesparks.api.responses.*;
 	import com.gamesparks.api.types.*;
 	...
-	
+
 	gs.getRequestBuilder()
 	    .createGooglePlayConnectRequest()
 		.setAccessToken(accessToken)
@@ -141,12 +141,12 @@ redirectUri | REQUIRED | The redirectUri is required when using a code rather th
 		.setSwitchIfPossible(switchIfPossible)
 		.setSyncDisplayName(syncDisplayName)
 		.send(function(response:com.gamesparks.api.responses.AuthenticationResponse):void {
-		var authToken:String = response.getAuthToken(); 
-		var displayName:String = response.getDisplayName(); 
-		var newPlayer:Boolean = response.getNewPlayer(); 
-		var scriptData:ScriptData = response.getScriptData(); 
-		var switchSummary:Player = response.getSwitchSummary(); 
-		var userId:String = response.getUserId(); 
+		var authToken:String = response.getAuthToken();
+		var displayName:String = response.getDisplayName();
+		var newPlayer:Boolean = response.getNewPlayer();
+		var scriptData:ScriptData = response.getScriptData();
+		var switchSummary:Player = response.getSwitchSummary();
+		var userId:String = response.getUserId();
 		});
 
 ```
@@ -169,12 +169,12 @@ redirectUri | REQUIRED | The redirectUri is required when using a code rather th
 	[request setSwitchIfPossible:switchIfPossible;
 	[request setSyncDisplayName:syncDisplayName;
 	[request setCallback:^ (GSAuthenticationResponse* response) {
-	NSString* authToken = [response getAuthToken]; 
-	NSString* displayName = [response getDisplayName]; 
-	BOOL newPlayer = [response getNewPlayer]; 
-	NSDictionary* scriptData = [response getScriptData]; 
-	GSPlayer* switchSummary = [response getSwitchSummary]; 
-	NSString* userId = [response getUserId]; 
+	NSString* authToken = [response getAuthToken];
+	NSString* displayName = [response getDisplayName];
+	BOOL newPlayer = [response getNewPlayer];
+	NSDictionary* scriptData = [response getScriptData];
+	GSPlayer* switchSummary = [response getSwitchSummary];
+	NSString* userId = [response getUserId];
 	}];
 	[gs send:request];
 
@@ -188,17 +188,17 @@ redirectUri | REQUIRED | The redirectUri is required when using a code rather th
 	using namespace GameSparks::Api::Responses;
 	using namespace GameSparks::Api::Requests;
 	...
-	
+
 	void GooglePlayConnectRequest_Response(GS& gsInstance, const AuthenticationResponse& response) {
-	gsstl::string authToken = response.getAuthToken(); 
-	gsstl::string displayName = response.getDisplayName(); 
-	Optional::t_BoolOptional newPlayer = response.getNewPlayer(); 
-	GSData scriptData = response.getScriptData(); 
-	Types::Player* switchSummary = response.getSwitchSummary(); 
-	gsstl::string userId = response.getUserId(); 
+	gsstl::string authToken = response.getAuthToken();
+	gsstl::string displayName = response.getDisplayName();
+	Optional::t_BoolOptional newPlayer = response.getNewPlayer();
+	GSData scriptData = response.getScriptData();
+	Types::Player* switchSummary = response.getSwitchSummary();
+	gsstl::string userId = response.getUserId();
 	}
 	......
-	
+
 	GooglePlayConnectRequest request(gsInstance);
 	request.SetAccessToken(accessToken)
 	request.SetCode(code)
@@ -237,12 +237,12 @@ gs.getRequestBuilder().createGooglePlayConnectRequest()
 	.send(new GSEventListener<AuthenticationResponse>() {
 		@Override
 		public void onEvent(AuthenticationResponse response) {
-			String authToken = response.getAuthToken(); 
-			String displayName = response.getDisplayName(); 
-			Boolean newPlayer = response.getNewPlayer(); 
-			GSData scriptData = response.getScriptData(); 
-			Player switchSummary = response.getSwitchSummary(); 
-			String userId = response.getUserId(); 
+			String authToken = response.getAuthToken();
+			String displayName = response.getDisplayName();
+			Boolean newPlayer = response.getNewPlayer();
+			GSData scriptData = response.getScriptData();
+			Player switchSummary = response.getSwitchSummary();
+			String userId = response.getUserId();
 		}
 	});
 
@@ -264,13 +264,11 @@ gs.getRequestBuilder().createGooglePlayConnectRequest()
 	request.switchIfPossible = ...;
 	request.syncDisplayName = ...;
 	var response = request.Send();
-	
-var authToken = response.authToken; 
-var displayName = response.displayName; 
-var newPlayer = response.newPlayer; 
-var scriptData = response.scriptData; 
-var switchSummary = response.switchSummary; 
-var userId = response.userId; 
+
+var authToken = response.authToken;
+var displayName = response.displayName;
+var newPlayer = response.newPlayer;
+var scriptData = response.scriptData;
+var switchSummary = response.switchSummary;
+var userId = response.userId;
 ```
-
-

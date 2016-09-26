@@ -9,7 +9,7 @@ The GameSparks platform allows you to make use of players' existing social media
 
 ## Connecting
 
-The platform exposes social API calls, which you can use to connect your players with their social profiles. This allows the platform to get data about your players on your behalf and gives the platform access to information such as friend lists. Connecting is the first step towards utilising the platform's social capabilities.
+The platform exposes social API calls, which you can use to connect your players with their social profiles. This allows the platform to get data about your players on your behalf and gives the platform access to information such as friend lists. Connecting is the first step towards utilizing the platform's social capabilities.
 
 ## Inviting
 

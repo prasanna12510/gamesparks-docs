@@ -72,7 +72,7 @@ Now, to test this out, enter a new High Score for your player in the Unity sampl
 
 #### Setting up the Message Handlers
 
-Once you've set your *LogEventRequest* to upload the Player's score, you can now set up a *NewHighScoreMessage* handler. *Handlers* are very useful tools which allow you to intercept *messages* that are passed in to your authenticated Player. For this tutorial, we'll be dealing with *NewHighScoreMessage*. We'll place the initialisation of the message handler in the same function which connects the *GS* *module*. To do this use gs.getMessagerHandler() and resume to choose which type of message you wish to intercept, followed by the function which will deal with the message. In our case, *'HighScoreMessageListener*' is a variable of type *GS*.
+Once you've set your *LogEventRequest* to upload the Player's score, you can now set up a *NewHighScoreMessage* handler. *Handlers* are very useful tools which allow you to intercept *messages* that are passed in to your authenticated Player. For this tutorial, we'll be dealing with *NewHighScoreMessage*. We'll place the initialization of the message handler in the same function which connects the *GS* *module*. To do this use gs.getMessagerHandler() and resume to choose which type of message you wish to intercept, followed by the function which will deal with the message. In our case, *'HighScoreMessageListener*' is a variable of type *GS*.
 
 ```
     	gs.getMessageHandler().setNewHighScoreMessageHandler(HighScoreMessageListener);

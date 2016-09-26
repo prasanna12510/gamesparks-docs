@@ -42,7 +42,7 @@ Variant Configuration
 
 *Name* - A description of the variant.
 
-*From/To %* - The percentile range of the Player results, from which the Experiment participants will be chosen.  For example, of the Players returned in the User Query results, those  assigned the 0 to 50 percentiles, are part of this variant of the Experiment.  Other variants could be created for 51 to 75 and 76 to 100, to maximise coverage of the Player results across all the variants of the Experiment.
+*From/To %* - The percentile range of the Player results, from which the Experiment participants will be chosen.  For example, of the Players returned in the User Query results, those  assigned the 0 to 50 percentiles, are part of this variant of the Experiment.  Other variants could be created for 51 to 75 and 76 to 100, to maximize coverage of the Player results across all the variants of the Experiment.
 
 *Variant Data* – Here, you can select the configuration that will be part of the Experiment.  You can give it a discernible name that will be visible only to those who are part of the Experiment, as well as the differing configuration values.
 

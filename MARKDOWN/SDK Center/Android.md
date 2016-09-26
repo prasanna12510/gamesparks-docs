@@ -103,7 +103,7 @@ If you try to build your application at this point, you'll receive an error rega
 
 *5.* After adding the line, hover your mouse over it and press *Alt+Enter* on your keyboard to automatically add the necessary code to make this work. That will ensure that the API is ready to be used.
 
-Now to initialise the GS module and connect our frontend to our backend!
+Now to initialize the GS module and connect our frontend to our backend!
 
 *6.* In any of your activity's Java code OnCreate function place the following:
 
