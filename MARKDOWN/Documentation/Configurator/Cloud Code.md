@@ -18,6 +18,8 @@ To access the Cloud Code JavaScript editor select the name of the script from on
 
 <q>**Keyboard Shortcuts to Save!** You can also save your scripts using standard key press combinations, **CMD+S** on OSX and **CTRL+S** on Windows and Linux.</q>
 
+<q>**Keyboard Shortcuts List!** For a list of keyboard shortcuts that you can use in the Cloud Code Editor see [below](#Cloud Code Editor Keyboard Shortcuts).</q>
+
 ### Events
 
 ![](img/CloudCode/6.png)
@@ -137,3 +139,71 @@ The *System* tab contains a number of System Events that are able to trigger som
     * On the Live stage, this script is executed once each time you publish your game.
   * *Player Connected* - This script is executed each time a player connects and is identified. *Spark.getPlayer()* is set to be the player who connected so you can query or manipulate the data related to the player.
   * *Player Disconnected* - This script is executed each time a player disconnects. *Spark.getPlayer()* is set to be the player who disconnected so you can query or manipulate the data related to the player.
+
+## Cloud Code Editor Keyboard Shortcuts
+
+This section lists keyboard shortcuts you can use when working in the Cloud Code Editor.
+
+### Selection
+
+| Windows/Linux | Mac | Action              
+| ------| --------- | ---------
+|  Ctrl+A | Command+A | Select All
+|  Shift+Left | Command+Left | Select Left
+|  Shift+Right | Command+Right | Select Right
+|  Ctrl+Shift+Left | Option+Shift+Left | Select Word Left
+|  Ctrl+Shift+Right | Option+Shift+Right | Select Word Right
+|  Shift+Home | Shift+Home | Select Line Start
+|  Shift+End | Shift+End | Select Line End
+|  Alt+Shift+Left | Command+Shift+Left | Select to Line Start
+|  Alt+Shift+Right | Command+Shift+Right | Select to Line End
+|  Shift+Up | Shift+Up | Select Up
+|  Shift+Down | Shift+Down | Select Down
+|  Ctrl+Shift+Home | Command+Shift+Up | Select to Start
+|  Ctrl+Shift+End | Command+Shift+Down | Select to End
+|  Ctrl+Shift+D | Command+Shift+D | Duplicate Selection
+
+### Line Operation
+
+| Windows/Linux | Mac | Action              
+| ------| --------- | ---------
+|  Ctrl+D | Command+D | Remove Line
+|  Alt+Shift+Down | Command+Option+Down | Copy Lines Down
+|  Alt+Shift+Up | Command+Option+Up | Copy Lines Up
+|  Alt+Down | Option+Down | Move Lines Down
+|  Alt+Up | Option+Up | Move Lines Up
+|  Alt+Delete | Ctrl+K | Remove to Line End
+|  Alt+Backspace | Command+Backspace | Remove to Line Start
+|  Ctrl+Backspace | Option+Backspace, Ctrl+Option+Backspace | Remove Word Left
+|  Ctrl+Delete | Option+Delete | Remove Word Right
+|  --- | Ctrl+O | Split Line
+|  Ctrl+M+/ | --- | Comment/Uncomment Line
+
+
+### Go To
+
+| Windows/Linux | Mac | Action              
+| ------| --------- | ---------
+|  Ctrl+L, Ctrl+M+L | Command+L, Command+M+L | Go to Line
+|  Left | Left, Ctrl+B | Go to Left
+|  Right | Right, Ctrl+F | Go to Right
+|  Ctrl+Left | Option+Left | Go to Word Left
+|  Ctrl+Right | Option+Right | Go to Word Right
+|  Up | Up, Ctrl+P | Go to Line Up
+|  Down | Down, Ctrl+N | Go to Line Down
+|  Alt+Left, Home | Command+Left, Home, Ctrl+A | Go to Line Start
+|  Alt+Right, End | Command+Right, End, Ctrl+E | Go to Line End
+|  Ctrl+Home | Command+Home, Command+Up | Go to Start
+|  Ctrl+End | Command+End, Command+Down | Go to End
+|  Ctrl+Down | Command+Down | Scroll Line Down
+|  Ctrl+Up | --- | Scroll Line Up
+
+
+### Find/Replace
+
+| Windows/Linux | Mac | Action              
+| ------| --------- | ---------
+|  Ctrl+F, Ctrl+M+F | Command+F | Find
+|  Ctrl+H | Command+Option+F | Replace
+|  Ctrl+K,| Command+G | Find Next
+|  Ctrl+Shift+K | Command+Shift+G | Find Previous
