@@ -36,4 +36,3 @@ Returns the body from the response as XML.<b>returns</b>A JSON representing the 
 _signature_ getResponseJson()</p>
 _returns_ JSON</p>
 Returns the body from the response as JSON.<b>returns</b>A string representing the body of the response.<b>example</b><pre rel="highlighter" code-brush="js" contenteditable="false">var response = Spark.getHttp(url).get();</pre><pre rel="highlighter" code-brush="js" contenteditable="false">var body = response.getResponseJson();</pre>
-
