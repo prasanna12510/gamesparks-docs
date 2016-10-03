@@ -32,7 +32,9 @@ In this tutorial, we'll build an example using a *set* and a *get* Event:
 
 ### setDetails Event
 
-*1.* In the portal, go to *Configurator > Cloud Code > Events* and create the *setDetails* Event with the 3 attributes given above.
+*1.* In the portal, go to *Configurator > Events* and create the *setDetails* Event with the 3 attributes given above.
+
+*2.* Navigate to *Configurator > Cloud Code* and under *Bindings* click to open *Events*.
 
 *2.* Select the *setDetails* Event and in the Cloud Code editor, add the following Cloud Code:
 
@@ -129,7 +131,7 @@ Lastly, we'll see how to add scriptData to requests from the SDK for Android cli
 
 ### Registration Request
 
-First, we'll navigate to *Configurator > Cloud Code > Requests* and open the Registration Request Cloud Code. In there we'll add:
+First, we'll navigate to *Configurator > Cloud Code > Requests* and open the *RegistrationRequest* Cloud Code Editor. In there we'll add:
 
 ```
 if(!Spark.getData().scriptData){
@@ -145,7 +147,7 @@ This will ensure that if the value 'email' isn't passed in through the scriptDat
 
 ### Registration Response
 
-Second, we'll navigate to *Configurator > Cloud Code > Responses* and add this to the Cloud Code:
+Second, we'll navigate to *Configurator > Cloud Code > Responses* and open the *RegistrationResponse* Cloud Code Editor. In there we'll add:
 
 ```
 if(Spark.getData().scriptData){
