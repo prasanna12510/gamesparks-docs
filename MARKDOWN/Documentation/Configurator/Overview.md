@@ -33,7 +33,7 @@ The edit form has the following fields:
   * *Description* \- A description of the game
   * *Primary Region* - Select the geographical region where your game will be published.
   * *Signup Bonuses* \- The amount of each of the currencies to award a new player when a new account is created
-  * *Segment Configuration* - Configure Segments for your game. For more details, see [Segments](/Documentation/Configurator/Segments.md).
+  * *Segment Configuration* - Configure Segments for your game's currencies. For more details, see [Segments](/Documentation/Configurator/Segments.md).
 
 ## Snapshots
 
@@ -49,15 +49,6 @@ You can use icons button options in the Snapshots panel:
   * ![](/img/fa/search.png) - Preview this Snapshot.
 
 Click [here](/Documentation/Key Concepts/Snapshots.md) for more information about Snapshots, Versioning and Publishing.
-
-## Access Secrets
-
-A number of secrets exist for different types of connections:
-
-  * *Device Api Secret* \- Used by your devices to connect to the service as a player.
-  * *Server Api Secret* \- Used for callback urls.
-  * *SFTP Secret* \- Used for SFTP access for file delivery (Request access via out support system).
-  * *Debug Secret* \- Used by the JavaScript remote debugger.
 
 ## Collaborators
 

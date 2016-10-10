@@ -33,15 +33,15 @@ Press the ![](/img/fa/plus.png) icon to create a new Running Total. The Edit/Cr
 ### Adding Summary fields
 
 To add summary fields to your Running Total, click on the plus icon. Each running total summary has the following fields:
-  * *Event Attribute* - Enter the name of the Summary, which is used to allow you to identify the item in the portal if you have a number of Summaries.
+  * *Event Attribute* - Select the Event Attribute that the Running Total will capture and process.
   * *Summary Type:*
     * *Maximum* - The Running Total will be created to track the maximum value posted.
     * *Minimum* - The Running Total will be created to track the minimum value posted.
     * *Sum* - The Running Total will be created to add all the values posted together.
     * *Count* - The Running Total will be created to count the number of times the player has called the Event.
     * *Last* - The Running Total will be created to track the last value posted.
-    * *Supplemental* \- A running total will be created with no value calculated. You can use this when you want to store some extra information within the game context but do not want this to affect the Leaderboard ranking. (For example, in a racing game you can keep note of weather conditions on the track as well as player lap times but changing weather conditions do not affect the player's Leaderboard ranking.)
-  * *Filter Type & Filter Value* - Allows you to control an optional filter for values tracked (<, >, * , and so on). Events posted that do not match the filter are ignored.
+    * *Supplemental* \- A Running Total will be created with no value calculated. You can use this when you want to store some extra information within the game context but do not want this to affect the Leaderboard ranking. (For example, in a racing game you can keep note of weather conditions on the track as well as player lap times but changing weather conditions do not affect the player's Leaderboard ranking.)
+  * *Filter Type & Filter Value* - Allows you to define an optional filter for values tracked (<, >, * , and so on). Events posted that do not match the filter are ignored.
 
 ![](img/RunningTotals/12.png)
 
