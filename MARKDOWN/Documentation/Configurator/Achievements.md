@@ -45,7 +45,7 @@ The icons (highlighted above) give you the following capabilities:
 
 *1.* Click the ![](/img/fa/plus.png) icon to create a new Achievement. The *Create Achievement* dialog appears:
 
-![](img/Achs/2.jpg)
+![](img/Achs/6.png)
 
 *2.* Enter your Achievement details:
 
@@ -56,6 +56,7 @@ The icons (highlighted above) give you the following capabilities:
 * *Currency Awards* \- The amount of each of the Currencies to award a player as a reward for gaining the Achievement.
 * *Leaderboard* \- Achievements can be triggered from a Leaderboard or by a Cloud Code script, if no Leaderboard was selected. Select the required Trigger here - either the Leaderboard trigger or select *None - Triggered by Script* if triggered by a Cloud Code script.
 * *Repeatable*  \- Enabling this means the Achievement can be earned multiple times.
+* *Property Set* - Select the [Property Set](/Documentation/Configurator/Properties.md) to which you want the Achievement to belong.
 
 ## Creating Achievement Triggers
 
