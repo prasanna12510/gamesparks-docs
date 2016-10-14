@@ -107,7 +107,7 @@ To retrieve data from the database, you use one of the available *find()* method
 
 ### Retrieving a Single Document
 
-If you want to retrieve a specific document, you can use a variant of the *findOne()* command. So if you had a document in your collection which looked like this:
+If you want to retrieve a specific document, you can use a variant of the *findOne()* command. So, if you had a document in your collection which looked like this:
 
 ```
 {
@@ -182,7 +182,7 @@ Here:
 * The first parameter is still the query to identify the data we want to retrieve.
 * The second parameter specifies which fields we want to retrieve from those documents.
 
-In this case, we specify that we want the *\_id* field by giving it a value of 1 – the database assumes that (because we specified which field we want) the other fields are not required. So this query would return a cursor containing documents like this:
+In this case, we specify that we want the *\_id* field by giving it a value of 1. If we do this, the database assumes that (because we specified which field we want) the other fields are not required. So this query would return a cursor containing documents like this:
 
 ```
 
@@ -261,7 +261,7 @@ A better method to implement paging would be to sort by a field such as *\_id*, 
 
 ```
 
-var cursor = collection.find( {age”: 35, "_id": {"$gt": {"$oid": "57fe0b4a3a32df048bf27405"}}} ).sort({"_id":1}).limit(10);
+var cursor = collection.find( {"age": 35, "_id": {"$gt": {"$oid": "57fe0b4a3a32df048bf27405"}}} ).sort({"_id":1}).limit(10);
 
 ```
 </br>
