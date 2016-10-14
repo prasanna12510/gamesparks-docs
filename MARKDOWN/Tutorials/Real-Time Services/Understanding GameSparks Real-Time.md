@@ -45,7 +45,7 @@ Real-Time sessions have access to every part of the backend and can execute logi
 You can place logic in the script that reacts to packets, to players connecting, and to players disconnecting using the same functions:
 * *OnData*
 * *OnPlayerConnect*
-* *OnPlayerDisconnect*.
+* *OnPlayerDisconnect*
 
 ![](img/RTGuide/3.png)
 
@@ -56,7 +56,7 @@ The packets sent and received have four attributes:
   * *Reliable* - Makes sure that packets sent are received.
   * *Unreliable* - Doesn't ensure packets are received but can discard packets if the bandwidth cannot support them (ideal for cosmetic purposes).
   * *Unreliable_Sequenced* - Similar to Unreliable but packets will be discarded if not received in the correct sequence.
-* *Data* - Optional. Sometimes it’s enough to send a packet without data to act as a trigger. The data in packets can be a string, int, vector, float and nested data. Each piece of data is saved in an index that you must set.
+* *Data* - Optional. Sometimes it’s enough to send a packet without data to act as a trigger. The data in packets can be a string, int, vector, float, and nested data. Each piece of data is saved in an index that you must set.
 * *Peers* - Mandatory. An int array of which peers to send to. 0 is the peer address of the server. The other peers are those sharing the session with the client.
 
 
