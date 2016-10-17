@@ -31,7 +31,7 @@ The *Events* list contains an entry for each Event you have created within the G
 
 ### Challenge Events
 
-![](img/CloudCode/6.png)
+![](img/CloudCode/7.png)
 
 The *Challenge Events* list contains an entry for each Event you have created within the GameSparks platform:
 * When a [LogChallengeEventRequest](/API Documentation/Request API/Multiplayer/LogChallengeEventRequest.md) is received, the corresponding script is executed allowing you to run custom code on the platform.
