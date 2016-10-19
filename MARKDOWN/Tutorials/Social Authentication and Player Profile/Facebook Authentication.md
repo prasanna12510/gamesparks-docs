@@ -29,7 +29,7 @@ Now you’re ready to create your app.
 
 ![](img/AuthFB/17.png)
 
-*6.* Fill in the *Display Name* and *Contact Email* fields, select your *Category* and *Sub-Category* in the drop down menus then click *Create App ID*.
+*6.* Fill in the *Display Name* and *Contact Email* fields, select your *Category* and *Sub-Category* in the drop-down menus then click *Create App ID*.
 
 ![](img/AuthFB/19.png)
 
@@ -54,7 +54,7 @@ The *Edit Facebook Configuration* dialog appears:
 
 *10.* Click *Save*.
 
-Your GameSparks game is now configured to use your newly-created Facebook application: you’re setup to authenticate your players via Facebook, and the GameSparks platform can access their profile to drive its social features.
+Your GameSparks game is now configured to use your newly-created Facebook application: you’re set up to authenticate your players via Facebook, and the GameSparks platform can access their profile to drive its social features.
 
 ## Authenticating a Player Using their Facebook Account
 
@@ -72,13 +72,13 @@ For the purpose of this tutorial, you can just get hold of the access token for 
 
 ![](img/AuthFB/20.png)
 
-The created test user(s) will be displayed in the list.
+*5.* Click to *Create Test Users*. The created test user(s) will be displayed in the list.
 
-*5.* Click *Edit* and on the drop-down select to get the access token for the test user:
+*6.* Click *Edit* and on the drop-down select to get the access token for the test user:
 
 ![](img/AuthFB/21.png)
 
-*6.* Copy the access token.  You will use it in the GameSparks portal Test Harness in the next section.
+*7.* Copy the access token.  You will use it in the GameSparks portal Test Harness in the next section.
 
 ![](img/AuthFB/10.png)
 
