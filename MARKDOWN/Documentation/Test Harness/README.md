@@ -27,26 +27,26 @@ There are several sections in the Test Harness:
 
 When you first access the Test Harness page within the Developer Portal it will establish a session with the GameSparks platform and you will see a session id in the *Connection* section.  At this point the Test Harness is connected to GameSparks but no player is currently authenticated within this session.  The initial connection handshaking methods are shown in the *Inspector* section.
 
- Once you have issued one of the available authentication requests (for example, AuthenticationRequest, DeviceAuthenticationRequest, and so on) with valid player details you will see an authentication token in the *Connection* section.
+ Once you have issued one of the available authentication requests (for example, [AuthenticationRequest](/API Documentation/Request API/Authentication/AuthenticationRequest.md), [DeviceAuthenticationRequest](/API Documentation/Request API/Authentication/DeviceAuthenticationRequest.md), and so on) with valid player details you will see an authentication token (*authToken*) in the *Connection* section.
 
 ## Issuing a Request
 
 To issue a request from the Test Harness, simply enter the JSON for the request into the *JSON* section and press the play ![](/img/fa/play.png) icon.
 
-![](img/TestHarness/2.png)
+![](img/TestHarness/27.png)
 
 The *Inspector* section will show the request (in green), and the response (in blue).
 
-![](img/TestHarness/3.png)
+![](img/TestHarness/28.png)
 
-The *Requests* section contains a selection of buttons which will populate the *JSON* section with the correctly formatted text for a given request.  The requests are grouped by functional area.  Click on the group name to display a submenu of buttons for each request.  These groups are:
+The *Requests* section contains a selection of buttons which will populate the *JSON* section with the correctly formatted text for a given request.  The requests are grouped by functional area.  Click on an area name to display a submenu of buttons for each request.  These groups are:
 
 * **Authentication** \- Requests relating to authentication and registration.
-* **Log Event** \- Contains a [LogEventRequest](/API Documentation/Request API/Player/LogEventRequest.md) for each of the [Events](/Documentation/Configurator/Events.md) that you have defined in the Configurator.
-* **Log Challenge Event** \- Contains a [LogChallengeEventRequest](/API Documentation/Request API/Multiplayer/LogChallengeEventRequest.md) for each of the [Events](/Documentation/Configurator/Events.md) that you have defined in the Configurator.
+* **LogEvent** \- Contains a [LogEventRequest](/API Documentation/Request API/Player/LogEventRequest.md) for each of the [Events](/Documentation/Configurator/Events.md) that you have defined in the Configurator.
+* **LogChallengeEvent** \- Contains a [LogChallengeEventRequest](/API Documentation/Request API/Multiplayer/LogChallengeEventRequest.md) for each of the [Events](/Documentation/Configurator/Events.md) that you have defined in the Configurator.
 * **Admin** \- Requests relating to administration jobs.
-* **Analytics** \- Requests relating to [Analytics](/Documentation/Analytics/README.md).
-* **Leaderboards** \- Requests relating to [Leaderboards](/Documentation/Configurator/Leaderboards/README.md).
+* **Analytics** \- Requests relating to [Analytics](/Documentation/Configurator/Analytics.md).
+* **Leaderboards** \- Requests relating to [Leaderboards](/Documentation/Configurator/Leaderboards.md).
 * **Misc** \- Requests that don't belong anywhere else!
 * **Multiplayer** \- Requests relating to multiplayer contexts.
 * **Player** \- Requests relating to the Player.
@@ -62,7 +62,7 @@ The *Requests* section contains a selection of buttons which will populate the 
 
 #### Example 1
 
-For example click on the *Player* group button to display the player related requests and then click the *ChangeUserDetailsRequest* button to populate the JSON section with the request.
+For example, click on the *Player* functional area button to display the player-related requests and then click the *ChangeUserDetailsRequest* button to populate the *JSON* section with the request.
 
 ![](img/TestHarness/22.png)
 
@@ -74,17 +74,19 @@ You can also issue several requests at once simply by creating a JSON array of r
 
 ![](img/TestHarness/21.png)
 
+<q>**Note:** You will need outer square brackets and comma separator between each request to build a well-formed JSON array.</q>
+
 ## Saving Requests as a Scenario
 
 To save an individual request click on the ![](/img/fa/save.png) icon in the *JSON* section.
 
-![](img/TestHarness/6.png)
+![](img/TestHarness/23.png)
 
 Give your scenario a meaningful name and click the *Save* button.
 
 ![](img/TestHarness/7.png)
 
-The scenario is saved to *Scenarios* group of the *Request* section and can be recalled to the *JSON* section in the future.
+The scenario is saved to the *Scenarios* functional area of the *Request* section and can be recalled to the *JSON* section in the future.
 
 ![](img/TestHarness/8.png)
 
@@ -92,14 +94,14 @@ The scenario is saved to *Scenarios* group of the *Request* section and can be 
 
 You can also record a sequence of requests with the Test Harness. Enter the first request in to the *JSON* section then click the microphone ![](/img/fa/microphone.png) icon which will change color to red to indicate that the Test Harness is now recording subsequent requests.
 
-![](img/TestHarness/9.png)
+![](img/TestHarness/24.png)
 
 Issue the command as normal with the Play icon  and then choose your next command.
 
-![](img/TestHarness/10.png)
+![](img/TestHarness/25.png)
 
-Once you have entered and sent all the requests in your scenario click the red microphone icon  a second time to stop recording.  The JSON section will be populated with an array of all the requests that you sent whilst recording.
+When you have entered and sent all the requests in your scenario, click the red microphone icon a second time to stop recording.  The *JSON* section will be populated with an array of all the requests that you sent whilst recording.
 
-![](img/TestHarness/11.png)
+![](img/TestHarness/26.png)
 
 This scenario can now be saved as described in the previous section.
