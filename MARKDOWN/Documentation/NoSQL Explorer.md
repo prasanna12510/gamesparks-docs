@@ -146,7 +146,7 @@ From the *Aggregate* tab you can calculate aggregate values for data in the Coll
 
 * *Collection* : Select the Collection for which you want to calculate aggregate values.
 * *Pipeline* : A JSON array of pipeline commands.
-  * If you are supplying more than one pipeline stage you must wrap then within a JSON array.
+  * If you are supplying more than one pipeline stage you must wrap them within a JSON array.
 * *Explain* button : Enter your query and click this button to get information about the query returned into the *Output* panel. You can review and analyze this information to optimize your query.
 
 ### Create
