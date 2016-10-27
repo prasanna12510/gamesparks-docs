@@ -33,6 +33,12 @@ From here you can perform the following actions (by clicking on the icons to the
   * *Revert* \- updates your workspace with the snapshot version. There is a fail-safe - a snapshot of the previous version is automatically taken (called "AUTOSAVE - Pre Revert") which can then be deleted if all is in order.
   * *Preview* \- allows previewing any of the Snapshots without having to revert to them, editing will be disabled when previewing.
 
+### Mongo Database Collections for Snapshots
+
+When you take a Snapshot, the platform records all of your game's configuration into a configuration set:
+  * This *includes* all Metadata Collections and their content.
+  * This *excludes* all Runtime and System Collections and their content. These are created new for the Live stage when you *first publish* a game Snapshot and remain untouched when future Snapshots are published.
+
 ## Publishing
 
 Once you have configured and tested your game, you will want to make it available to the public! The testing you have done to this point has been on the preview servers. These servers allow you to develop your game but are not suitable for use by a significant number of players - there is a limit of 100 concurrent connections per game.
@@ -40,3 +46,5 @@ Once you have configured and tested your game, you will want to make it availab
 <q>**Note:** You should not launch your game using the preview servers because player devices will not be able to connect when concurrency limits are reached.</q>
 
 When you are ready to launch your game you need to save the configuration in a snapshot and then publish it to the live servers. These are designed for massive concurrency and can handle the loads generated when hundreds of thousands of players are using the game at the same time.
+
+<q>**Going Live Checklist!** Before you attempt to create a Snapshot of your game and publish it to Live, please review the [Going Live Checklist](/Getting Started/Going Live Checklist/README.md) to ensure everything runs smoothly.</q>

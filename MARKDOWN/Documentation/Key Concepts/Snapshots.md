@@ -28,11 +28,18 @@ You can then use icon button options (highlighted):
     * Only the game configuration.
     * Both the metadata and the game configuration.
 
-<q>**Important!** Don't worry about overwriting the target games configuration. There is a fail-safe - a snapshot of the target games previous version is automatically created (called "AUTOSAVE - Pre Copy") before the copy occurs.</q>
-  * ![](/img/fa/trash.png) - Deletes the snapshot.
-  * ![](/img/fa/upload.png) - Publish the configuration to the LIVE servers. The snapshot that is currently published is highlighted in green. See below for more detail on publishing.
-  * ![](/img/fa/random.png) - Revert your workspace with the selected snapshot version. There is another fail-safe - a snapshot of the previous version is automatically taken (called "AUTOSAVE - Pre Revert").
+<q>**Important!** Don't worry about overwriting the target game's configuration. There is a fail-safe - a Snapshot of the target game's previous version is automatically created (called "AUTOSAVE - Pre Copy") before the copy occurs.</q>
+  * ![](/img/fa/trash.png) - Deletes the Snapshot.
+  * ![](/img/fa/upload.png) - Publish the configuration to the LIVE servers. The Snapshot that is currently published is highlighted in green. See below for more detail on publishing.
+  * ![](/img/fa/random.png) - Revert your workspace with the selected Snapshot version. There is another fail-safe - a Snapshot of the previous version is automatically taken (called "AUTOSAVE - Pre Revert").
   * ![](/img/fa/search.png) - Preview any of the Snapshots without having to revert to them, editing will be disabled when previewing.
+
+### Mongo Database Collections for Snapshots
+
+When you take a Snapshot, the platform records all of your game's configuration into a configuration set:
+* This *includes* all Metadata Collections and their content.
+* This *excludes* all Runtime and System Collections and their content. These are created new for the Live stage when you *first publish* a game Snapshot and remain untouched when future Snapshots are published.
+
 
 ## Copying a Snapshot
 
@@ -59,6 +66,8 @@ Publishing a Snapshot places the configuration of the game into the LIVE environ
 Once you confirm your selection to publish the Snapshot, it will be highlighted in green within the list of Snapshots:
 
 ![](img/Snapshot/7.jpg)
+
+<q>**Going Live Checklist!** Before you publish your Snapshot to Live, please review the [Going Live Checklist](/Getting Started/Going Live Checklist/README.md) to ensure everything runs smoothly.</q>
 
 ## Reverting a Snapshot
 
