@@ -3,7 +3,7 @@ nav_sort: 1
 src: /Tutorials/Game Engine Integrations/CPP Quick Start.md
 ---
 
-# Cpp Quick Start
+# CPP Quick Start
 
 ## Initialization
 

@@ -26,7 +26,7 @@ When you have completed your game configuration, created a Snapshot, and you are
   * [Unreal](#Pointing to Live in Unreal).
   * [Android](#Pointing to Live in Android).
   * [ActionScript](#Pointing to Live in ActionScript)
-  * [C++](#Pointing to Live in Cpp)
+  * [C++](#Pointing to Live in CPP)
   * [cocos2d-x](#Pointing to Live in cocos2d-x)
   * [iOS](#Pointing to Live in iOS)
   * [JavaScript](#Pointing to Live in JavaScript)
@@ -84,7 +84,7 @@ gs.setApiKey("yourApiKey")
 
 ```
 
-## Pointing to Live in Cpp
+## Pointing to Live in CPP
 
 To make sure your C++ client is pointing to Live, set the 3rd parameter on the constructor to *false*:
 
