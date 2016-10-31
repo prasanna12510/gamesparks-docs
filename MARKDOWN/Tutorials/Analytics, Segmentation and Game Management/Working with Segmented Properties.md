@@ -147,4 +147,4 @@ Make sure you have some Segments configured, and let's go back to the Properties
 
 ![](img/SegmentedProperties/7.png)
 
-Now when you edit our Property Set, by each Property is a ![](/img/fa/plus.png) icon. Clicking this lets you override the value that will be surfaced under each 'Name', depending on the segments of the current player. Now, wherever you access that Property Set, if the Player belongs to a segment whose value you've overridden, they will see that overridden value. The obvious example here is delivering language-specific properties to a Player, but the possibilities really are boundless!
+Now when you edit your Property Set, by each Property is a ![](/img/fa/plus.png) icon. Clicking this lets you override the value that will be surfaced under each 'Name', depending on the segments of the current player. Now, wherever you access that Property Set, if the Player belongs to a segment whose value you've overridden, they will see that overridden value. The obvious example here is delivering language-specific properties to a Player, but the possibilities really are boundless!

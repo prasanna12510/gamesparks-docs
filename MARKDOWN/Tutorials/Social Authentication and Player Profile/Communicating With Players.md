@@ -17,10 +17,10 @@ GameSparks offers you several ways to send messages to your players with incredi
 
 ## Messages
 
-Messages are used to notify your players with events or information. GameSparks includes many native messages such as earning a new achievement, acquiring a new highscore, or losing a position on a Leaderboard. You can customize these messages or create new ones:
+Messages are used to notify your players with Events or information. GameSparks includes many native messages such as earning a new Achievement, acquiring a new highscore, or losing a position on a Leaderboard. You can customize these messages or create new ones:
 * **Sockets.** Messages can be sent to your players through sockets, so players only receive them once they're authenticated and in-game, which would be intercepted and outputted to the player using message listeners.
 * **Push Notifications.** Messages can also be sent to your players through push-notifications.
-* **Customized Messaging.** You can update any of the native GameSparks native messages to suit your game and segment the messages depending on the player and display different message entirely. You can also format your message depending on OS and include or omit players with a specific OS.
+* **Customized Messaging.** You can update any of the GameSparks native messages to suit your game and segment the messages depending on the player and display different message entirely. You can also format your message depending on OS and include or omit players with a specific OS.
 
 
 ![](img/PlayerCom/1.jpg)

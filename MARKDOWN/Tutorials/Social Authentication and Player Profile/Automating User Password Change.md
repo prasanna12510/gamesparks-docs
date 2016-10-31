@@ -62,7 +62,7 @@ If the email passed in is linked to an account, then:
 ```  
     function startRecovery(request){
         if(!request.email){
-            status = "email variable not passed in"; //Either email variable was not passed in pr spelt incorrect
+            status = "email variable not passed in"; //Either email variable was not passed in or spelt incorrectly
             return;
         }
         var players = Spark.systemCollection("player");

@@ -7,9 +7,9 @@ src: /Tutorials/Social Authentication and Player Profile/Accessing Player record
 
 ## Introduction
 
-An important part of a back-end is the ability to access your player's info in real-time and have the ability to change it. GameSparks gives you the ability to do this using multiple approaches.
+An important capability for a back-end is that it gives you the ability to access your player's info in real-time and allows you to change this data. GameSparks gives you the ability to do this using multiple approaches.
 
-This tutorial explores how to access player records using the NoSQL Explorer, Player management screen, and cloud code.  
+This tutorial explores how to access player records using the NoSQL Explorer, the Player Management screen, and Cloud Code.  
 
 ## Working with the NoSQL Explorer
 

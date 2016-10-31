@@ -177,7 +177,7 @@ Response:
 *7.* When a job has been run, the results are available to be seen in NoSQL. If we want to see the results of the bulk operation, we can do this in two locations:
 
 * The *Player* collection, which will show you how much currency each player has. We can use our player query used earlier - the one we used in the Bulk Job - in NoSQL Explorer to verify just the players affected by this job.
-* The second way to see this is in the *playerTranactionAudit* collection.  This collection shows all transactions around currency and virtual goods.
+* The second way to see this is in the *playerTransactionAudit* collection.  This collection shows all transactions around currency and virtual goods.
 
 ## How to Create a Bulk Job with Cloud Code
 
