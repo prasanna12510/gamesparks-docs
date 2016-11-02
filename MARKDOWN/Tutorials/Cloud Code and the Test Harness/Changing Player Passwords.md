@@ -37,8 +37,7 @@ The GameSparks platform will return a response similar to this.
     {
      "@class": ".RegistrationResponse",
      "authToken": "a8c88571-31c5-4747-adb7-34f04bcd1bf4",
-     "displayName": "Nick"
-     "scriptData": null,
+     "displayName": "Nick",
      "userId": "537f755d4566a1b7eb012e92"
     }
 
@@ -64,8 +63,7 @@ The GameSparks platform will return a response similar to this:
 ```
 
     {
-     "@class": ".ChangeUserDetailsResponse",
-     "scriptData": null
+     "@class": ".ChangeUserDetailsResponse"
     }
 
 ```
@@ -82,13 +80,12 @@ For greater security, you might require that the player enters their existing pa
     }
 
 ```
-The GameSparks platform will return a registration response similar to this:
+The GameSparks platform will return a response similar to this:
 
 ```
 
     {
-     "@class": ".ChangeUserDetailsResponse",
-     "scriptData": null
+     "@class": ".ChangeUserDetailsResponse"
     }
 
 ```
@@ -142,7 +139,7 @@ Let's test out this configuration in the *Test Harness*.
 
   ```  
 
-The GameSparks platform will return a registration response similar to this:
+The GameSparks platform will return a response similar to this:
 
 ```
 
@@ -150,7 +147,6 @@ The GameSparks platform will return a registration response similar to this:
      "@class": ".AuthenticationResponse",
      "authToken": "1c53797a-6e3f-4db7-b529-b70820c35303",
      "displayName": "displayName",
-     "scriptData": null,
      "userId": "53808a96e4b02eeeac89e23a"
     }
 
@@ -164,18 +160,17 @@ The GameSparks platform will return a registration response similar to this:
      "@class": ".LogEventRequest",
      "eventKey": "PASSWORD",
      "OLD_PASS": "password",
-     "NEW_PASS": "mynewp4ssword"
+     "NEW_PASS": "mynewpassword"
     }
 
 ```
 
-The GameSparks platform will return a registration response similar to this:
+The GameSparks platform will return a response similar to this:
 
 ```
 
     {
-     "@class": ".LogEventResponse",
-     "scriptData": null
+     "@class": ".LogEventResponse"
     }
 
 ```

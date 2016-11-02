@@ -68,7 +68,7 @@ These numbers provide key aggregated analytics data metrics about how well your�
 
 The *Performance* tab displays a number of performance-related graphs:
 
-  * *Average Requests per Player* - Shows the average number of request generated per player within you game.
+  * *Average Requests per Player* - Shows the average number of requests generated per player within you game.
   * *Average Response Time (ms)* - Shows the average response time (in milliseconds) that the GameSparks platform has taken to respond to API request calls.
   * *Average Javascript Execution Time (ms)* - Shows the average time (in milliseconds) that the GameSparks platform has spent executing your Cloud Code.
   * *Average Storage per Player (bytes)* - Shows the average amount of cloud data per player that your game is using.
