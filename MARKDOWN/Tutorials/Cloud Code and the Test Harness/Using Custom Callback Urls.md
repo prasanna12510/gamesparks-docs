@@ -27,7 +27,7 @@ You can use Callbacks to run separate, customized Cloud Code scripts against dif
 
 *4.* Select *Callbacks* from the *Bindings* list, and edit one of the custom credentials that you created in *Step 1* or *2*.
 
-![](img/CustomCallback4.png)
+![](img/CustomCallback5.png)
 
 *5.* Enter the Cloud Code you want to be executed for the Callback. For the purposes of our tutorial, we'll just write a Script to return a message:
 

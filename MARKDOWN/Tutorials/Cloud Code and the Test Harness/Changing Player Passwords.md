@@ -104,7 +104,7 @@ First of all, we need to create an Event which the game client code will use to 
 
 *4.* Select the *Change Password* item to open up the Javascript editor for the Cloud Code associated with this Event:
 
-![](img/PassChange/2.jpg)
+![](img/PassChange/3.png)
 
 *5.* Copy the following script to the editor and click the *Save* button:
 

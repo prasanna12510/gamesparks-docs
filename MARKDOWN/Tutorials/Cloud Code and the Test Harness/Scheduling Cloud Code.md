@@ -21,9 +21,9 @@ To do this, let's first create an Event that the game code can trigger to indica
 
 ![](img/Schedule/8.png)
 
-*3.* Navigate to *Configurator > Cloud Code > Bindings > Events* and select the *Plant a seed* Event to open up the Cloud Code editor for this Event.
+*3.* Navigate to *Configurator > Cloud Code > Bindings > Events* and select the *Plant Seed* Event to open up the Cloud Code editor for this Event.
 
-![](img/Schedule/9.png)
+![](img/Schedule/10.png)
 
 *4.* Copy the following script to the editor and click the *Save* button.
 

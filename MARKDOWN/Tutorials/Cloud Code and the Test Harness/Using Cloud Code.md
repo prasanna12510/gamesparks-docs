@@ -61,7 +61,7 @@ In this section, we'll create a Cloud Code script linked to the Event that we've
 
 *11.* Select the Event we have just created - *Cloud Code Event*. We'll now bind Cloud Code to it.
 
-![](img/CreateCloud/7.png)
+![](img/CreateCloud/18.png)
 
 *12.* Copy and paste the following JavaScript code into the editor section.
 
@@ -78,7 +78,7 @@ In this section, we'll create a Cloud Code script linked to the Event that we've
 
 *13.* Click *Save* at the bottom right-hand corner. Your page should now look like this.
 
-![](img/CreateCloud/8.png)
+![](img/CreateCloud/19.png)
 
 Let's review this Cloud Code script:
 * The first three lines of the script use the *Spark.getData* function to access the attribute values of the incoming Event. Notice how these attributes match the values we entered for the 3 Event Attribute Short Codes in the previous section.

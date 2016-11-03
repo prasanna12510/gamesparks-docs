@@ -23,7 +23,7 @@ Here, we've called the Event *Grant Currency*.
 
 *2.* Then navigate to *Configurator > Cloud Code > Events > Grant Currency*. The *Cloud Code* editor opens for this Event and you can add the required Cloud Code:
 
-![](img/UT/10.png)
+![](img/UT/12.png)
 
 This is the Cloud Code:
 

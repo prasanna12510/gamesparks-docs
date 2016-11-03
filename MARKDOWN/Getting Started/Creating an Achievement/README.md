@@ -57,7 +57,7 @@ After you've created and configured the *Award Achievement* Event, you'll need t
 
 *3.* Click *Save* and you should see a *Success* alert.
 
-![](img/Create/7.png)
+![](img/Create/9.png)
 
 * This piece of Cloud Code takes hold of the player object that is currently authenticated:
 

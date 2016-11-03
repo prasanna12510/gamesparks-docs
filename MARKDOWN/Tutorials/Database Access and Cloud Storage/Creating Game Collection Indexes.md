@@ -5,7 +5,7 @@ src: /Tutorials/Database Access and Cloud Storage/Creating Game Collection Index
 
 # How to Create Indexes for Custom Game Collections
 
-Indexes on collections allow MongoDB to process queries more efficiently and speed up the time it takes to execute your Cloud Code scripts. For queries that don't use an index, MongoDB must scan all documents in a collection for documents that match the query. For large collections this can be an expensive operation.
+Indexes on collections allow the MongoDB to process queries more efficiently and speed up the time it takes to execute your Cloud Code scripts. For queries that don't use an index, MongoDB must scan all documents in a collection for documents that match the query. For large collections this can be an expensive operation.
 
 In this tutorial, we'll create a custom collection and add an index to it via a Cloud Code script.
 
@@ -17,9 +17,9 @@ As a first step, let's create a runtime collection using the [NoSQL Explorer](/D
 
 *2.* Enter a name for your collection and select the Runtime collection type.
 
-*3.* Click the *Submit* button to create your custom collection.
+![](img/CustomIndex/7.png)
 
-![](img/CustomIndex/1.png)
+*3.* Click the *Submit* button to create your custom collection.
 
 This creates a new collection called *script.playerChatHistory*, which your game can use to store custom data. For this example, let's assume that this collection contains documents that look like this:
 
@@ -33,7 +33,9 @@ This creates a new collection called *script.playerChatHistory*, which your game
      "chatData": "Hi buddy, fancy a game of Pong?"
     }
 ```
-</br>
+
+## Writing the Cloud Code
+
 The next step is to write some Cloud Code that creates an index on this collection. A sensible place to attach this type of script is the *Game Published* Event:
 
 *1.* Navigate to the *Configurator->Cloud Code* page in the developer portal.
@@ -43,7 +45,7 @@ The next step is to write some Cloud Code that creates an index on this collecti
 *3.* Click on the *Game Published* option to access that script:
 
 
-![](img/CustomIndex/2.png)
+![](img/CustomIndex/6.png)
 
 *4.* Enter the following Javascript in the editor window and click the *Save* button:
 
@@ -71,9 +73,9 @@ To test our script we need to publish the game:
 
 *1.* Navigate to the *Configurator->Overview* page.
 
-*2.* Click on the ![](/img/fa/plus.png) icon to create a new snapshot:
+*2.* Under *Snapshots*, click the ![](/img/fa/plus.png) icon to create a new Snapshot:
 
-![](img/CustomIndex/3.png)
+![](img/CustomIndex/8.png)
 
 *3.* Enter a name for your new snapshot:
 
@@ -81,7 +83,7 @@ To test our script we need to publish the game:
 
 *4.* Publish the snapshot by clicking on the ![](/img/fa/upload.png) icon:
 
-![](img/CustomIndex/5.png)
+![](img/CustomIndex/9.png)
 
 Publishing the game will have triggered the Cloud Code script that we attached to the *Game Published* Event.
 

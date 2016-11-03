@@ -14,11 +14,11 @@ In this tutorial, we'll go through setting up a new Real-Time script and explain
 
 ## Creating Real-Time Scripts
 
-*1.* In the portal, go to *Configurator > Cloud Code* and select *Realtime Scripts*.
+*1.* In the portal, go to *Configurator > Cloud Code* and under *Bindings* select *Realtime Scripts*.
 
 *2.* Click the plus ![](/img/fa/plus.png) icon to create a new Real-Time script:
 
-![](img/RTScripts/1.png)
+![](img/RTScripts/4.png)
 
 ## RTSession API
 

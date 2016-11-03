@@ -48,9 +48,6 @@ After you've finished setting up the Set Event, you can go ahead and make the G
 
 ![](img/UsingCloudCode/12.png)
 
-
-
-
 ## Cloud Code
 
 ### Set Event
@@ -63,7 +60,7 @@ After creating the two Events, you can attach some *Cloud Code* to them and pr
 
 *3.* Now we can write the Cloud Code that will handle the position setting:
 
-![](img/UsingCloudCode/13.png)
+![](img/UsingCloudCode/15.png)
 
 As seen in the image, all you need to do is *getData* that was sent with the Request, get the current player using *getPlayer* and finally set Players Script Data using *setScriptData*:
 
@@ -84,7 +81,7 @@ To enter the Cloud Code for the Get Position Event:
 
 *3.* Now we can write the Cloud Code:  
 
-![](img/UsingCloudCode/14.png)
+![](img/UsingCloudCode/16.png)
 
 The Get Position Event is essentially a reverse of the Set Position Event. Here we get the Player using *getPlayer*, then we retrieve the Script Data that was Set for this player using *getScriptData*. Finally, we use *setScriptData* to Set the Position in the Response of the Event.
 

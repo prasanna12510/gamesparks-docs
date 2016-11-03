@@ -22,11 +22,11 @@ The first thing we need to do is create a new real-time script and add it to our
 
 To create a new RT-script:
 
-*1.* Go to *Configurator > Cloud Code* in your portal and select the *Realtime Scripts* drop-down.
+*1.* Go to *Configurator > Cloud Code* in your portal and under *Bindings* select the *Realtime Scripts* drop-down.
 
 *2.* Then Click the plus ![](/img/fa/plus.png) icon in order to create a new script:
 
-![](img/ClockSync/5.png)
+![](img/ClockSync/7.png)
 
 When you have created your script, we need to add it to our match.
 

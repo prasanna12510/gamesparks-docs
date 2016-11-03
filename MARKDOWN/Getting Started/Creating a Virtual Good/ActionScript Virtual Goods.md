@@ -45,9 +45,9 @@ You will log this Event whenever the authenticated player *consumes* a Gold Coin
 
 *3.* In the Event *Cloud Code* create a variable that holds the amount being passed in the Event through the *CASH* Attribute, and call it *money*:
 
-*4.* Next, get the player object using *Spark.getPlayer()* and credit their *currency1* with the *money* value.
+*4.* Next, get the player object using *Spark.getPlayer()* and credit their *currency1* with the *money* value:
 
-![](img/AS/2.png)
+![](img/AS/4.png)
  
 Here's the Cloud Code:
 

@@ -3,7 +3,7 @@ nav_sort: 3
 src: /Tutorials/Multiplayer/Sharing Data between Players.md
 ---
 
-# Sharing Data betwen Players
+# Sharing Data between Players
 
 The GameSparks platform makes it easy for developers to be able to share game data between players. You may want to use this to implement features such as ghost data replay in a racing game or for implementing the sharing of player-created game levels.
 
@@ -29,17 +29,17 @@ For the purpose of this article we will assume that the ghost race data can be r
 ## Creating the Event and Cloud Code Script for Storing Ghost Data
 
 *1.* Create an Event that allows the game to submit the JSON ghost race data, the track name and the race time (how long the race took):
-* Log in to the GameSparks Portal and navigate to Configurator-> Events.
+* Log in to the GameSparks Portal and navigate to *Configurator > Events*.
 * Click on the plus icon to add a new Event.
 * Set up the Event as follows:
 
-![](img/PlayerDataSharing/1.jpg)
+![](img/PlayerDataSharing/5.png)
 
 *2.* Create the Cloud Code script to store this data in a MongoDB collection:
-* In the Portal navigate to Configurator->Cloud Code->Bindings->Events
-* Select the Event we created in the previous section called 'Store race data':
+* In the Portal navigate to *Configurator > Cloud Code > Bindings > Events*.
+* Select the *Store race data* Event we created in the previous section:
 
-![](img/PlayerDataSharing/2.jpg)
+![](img/PlayerDataSharing/6.png)
 
 * Copy and paste in the following Cloud Code script in to the JavaScript editor and click the 'Save' button.
 

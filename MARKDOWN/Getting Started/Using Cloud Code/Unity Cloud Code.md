@@ -66,11 +66,11 @@ Now you've sent the *LogEventRequest* from Unity, you'll now be able to save the
 
 *1.* Here's how to navigate to your Event:
 
-![](img/UT/11.png)
+![](img/UT/18.png)
 
 *2.* In the *Cloud Code* editor on the *Save Player Details* tab, you'll be able to access the data sent via Unity:
 
-![](img/UT/12.png)
+![](img/UT/17.png)
 
 *3.* You can then add this as the Player data to your collection.
 

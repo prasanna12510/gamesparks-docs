@@ -51,7 +51,7 @@ This event will be logged whenever the *authenticated* player *consumes* a Gol
 
 *4.* Now get the Player object using *getPlayer* and credit them *currency1* by the *money* value:
 
-![](img/UR/2.png)
+![](img/UR/7.png)
 
 ### Setting up the Shop Screen
 
