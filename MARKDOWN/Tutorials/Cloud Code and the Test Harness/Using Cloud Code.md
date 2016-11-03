@@ -15,7 +15,7 @@ In this tutorial, you can follow an example and learn how to create and work wit
 
 *1.* Go to *Configurator > Events* and click the ![](/img/fa/plus.png) icon:
 
-![](img/CreateCloud/1.png)
+![](img/CreateCloud/20.png)
 
 The *Create Event* dialog appears.
 
