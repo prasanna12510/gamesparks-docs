@@ -155,10 +155,12 @@ This section explains how to integrate each store type with the GameSparks platf
 *1.* To make purchases using Google Play, you first need to set up your Virtual Good as a product in the Google Play Developer Console. See [Creating a Product List](https://developer.android.com/google/play/billing/billing_admin.html#billing-list-setup).
 
 *2.* Now we need to tie the Virtual Good in your game to the product in Google Play. We do this in the GameSparks Developer Portal:
-* Go to *Overview > Virtual Goods* and edit your Virtual Good.
+* Go to *Configurator > Virtual Goods* and edit your Virtual Good.
 * Insert the Product ID you gave your product within the Google Play Developer Console into the *Google Product ID* field.
 
-*3.* Finally, to verify the purchase on the server we need to set up you Google Play public key within your game. Go to the GameSparks Developer Portal under *Configurator > Notifications > Google* and in the field *Google Play Public Key* enter the key obtained by following the steps in the section "Getting an app's license key" [here](http://developer.android.com/google/play/billing/billing_admin.html).
+*3.* Finally, to verify the purchase on the server we need to set up you Google Play public key within your game:
+* In the GameSparks Developer Portal, go to *Configurator > Integrations* and under *Providers*, select *Google*, and click *Edit*.
+* In the *Google Play Public Key* field enter the key obtained by following the steps in the section "Getting an app's license key" [here](http://developer.android.com/google/play/billing/billing_admin.html).
 
 *4.* After making the purchase in the client, Google Play will invoke your response Intent as described in [Purchasing an Item](https://developer.android.com/google/play/billing/billing_integrate.html#Purchase). At this point you can get the purchase data and the signature:
 
@@ -194,7 +196,7 @@ At which point the player's profile will have been updated with the newly purcha
 *1.* To make purchases using the iOS App Store, first you need to set up your Virtual Good in iTunes Connect, as described in [Configuring a Product](https://developer.apple.com/library/ios/documentation/LanguagesUtilities/Conceptual/iTunesConnectInAppPurchase_Guide/Chapters/CreatingInAppPurchaseProducts.html#//apple_ref/doc/uid/TP40013727-CH3-SW3).
 
 *2.* Now we need to tie the Virtual Good in your game to the product in iTunes Connect. We do this in the GameSparks Developer Portal:
-* Go to *Overview > Virtual Goods* and edit your Virtual Good.
+* Go to *Configurator > Virtual Goods* and edit your Virtual Good.
 * Insert the Product ID you gave your product within iTunes Connect into the *IOS Product ID* field.
 
 *3.* After a purchase is made, get hold of the receipt as described in [Read the Receipt Data](https://developer.apple.com/library/ios/releasenotes/General/ValidateAppStoreReceipt/Chapters/ValidateRemotely.html#//apple_ref/doc/uid/TP40010573-CH104-SW2).
@@ -237,7 +239,7 @@ At which point the player’s profile will have been updated with the newly purc
 *1.* To make purchases using the Windows Store, first you need to set up your Virtual Good in the [Windows Phone Dev Center](https://developer.microsoft.com/en-us/).
 
 *2.* Now we need to tie the Virtual Good in your game to the product in the Windows Phone Dev Center. We do this in the GameSparks Developer Portal:
-* Go to *Overview > Virtual Goods* and edit your Virtual Good.
+* Go to *Configurator > Virtual Goods* and edit your Virtual Good.
 * Insert the Product ID you gave your product within the Windows Phone Dev Center into the *WP8 Product ID* field.
 
 *3.* After a purchase is made, get hold of the receipt as described in [Use a receipt as proof of purchase on a server](http://msdn.microsoft.com/en-us/library/windowsphone/develop/jj206950.aspx#BKMK_CodeSamples).
