@@ -128,6 +128,30 @@ Modules allow you to create your own libraries of JavaScript that can be include
 
 Realtime Modules allow you to create your own libraries of JavaScript that can be included within other Realtime scripts. This allows you to separate common functionality that needs to be shared between scripts into a single Realtime module that can be included.
 
+Realtime modules use CommonJS module loading, a primer for CommonJS can be found [here](https://darrenderidder.github.io/talks/ModulePatterns/#/).
+
+To author a Realtime module, you must define the objects you want to export. This is done using "module.exports". You can export multiple items from a single module:
+
+```
+module.exports.fiz = function () {
+    console.log('fiz!');
+}
+
+module.exports.buzz = function () {
+    console.log('buzz!');
+}
+```
+
+To include the Realtime Module in a Realtime Script, the require function should be used as follows:
+
+```
+var theModule = require("MODULE_NAME");
+var fizResult = theModule.fiz();
+var buzzResult = theModule.buzz();
+```
+
+At this point, theModule represents the exports from the Realtime Module
+
 
 ### System
 
