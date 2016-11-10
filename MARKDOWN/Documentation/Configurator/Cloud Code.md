@@ -150,7 +150,7 @@ var fizResult = theModule.fiz();
 var buzzResult = theModule.buzz();
 ```
 
-At this point, theModule represents the exports from the Realtime Module
+At this point, *theModule* represents the exports from the Realtime Module
 
 
 ### System
