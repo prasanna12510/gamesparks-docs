@@ -152,6 +152,7 @@ var buzzResult = theModule.buzz();
 
 At this point, *theModule* represents the exports from the Realtime Module
 
+* To create a new Realtime Module, click the plus ![](/img/fa/plus.png) icon. Then, on the *Create Realtime Module* dialog, enter a *Short Code* to uniquely identify the new Realtime Module and click *Add*.
 
 ### System
 
