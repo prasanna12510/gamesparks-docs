@@ -14,11 +14,16 @@ To create and edit Credentials, go to *Configurator > Integrations*. Existing Cr
 
 ![](img/SecCred/2.png)
 
-## Credential settings
+## Credential Settings
 
-There are two ways in which you can configure Credentials for your game:
-* Select Credential type.
-* Enable Credential requests.
+There are two main ways in which you can configure Credentials for your game:
+* [Select Credential Type](#Selecting Credential Types)
+* [Enable Credential Requests](#Enabling Credential Requests)
+
+You can also configure Credentials for:
+* [COPPA Compliance](#Enabling COPPA Compliance)
+* [REST Policy](#Selecting REST Policy)
+
 
 ### Selecting Credential Types
 
@@ -43,6 +48,15 @@ When you create or edit a Credential, there are four tabs for different requests
 
 <q>**Note:** *AdminRequests* cannot be enabled for a Player Credential - you will get an error if you try to do this!</q>
 
+### Enabling COPPA Compliance
+
+If you enable a Credential as COPPA compliant, then certain data defined by the Children's Online Privacy Protection Act of 1998 will not be stored on the GameSparks platform. Any player with this Credential connecting to the platform will not be allowed to authenticate through a 3rd-party social account. Blocking social account authentication for COPPA Credentials in this way ensures no Personally Identifiable Information (PII) will be stored on the platform.
+
+### Selecting REST Policy
+
+Select to allow or forbid the Credential to accept REST requests:
+* If you allow REST requests for a Credential, you can specify that an authorization token is or is not required when making REST requests.
+
 ## System Credentials
 
 On all games there are five default *System* credentials:
@@ -64,12 +78,19 @@ To edit a System Credential:
 
 *1.* Click the edit ![](/img/fa/edit.png) icon. The *Edit Credential* dialog appears:
 
-![](img/SecCred/3.png)
+![](img/SecCred/7.png)
 
 
-*2.* Select any of the four request tabs and check the individual requests under each one for the Credentials you want to allow/disallow. In this example, the first Requests tab is selected and all requests on this tab are checked and therefore allowed.
+*2.* Use the *REST Policy* drop-down to select whether or not you want this Credential to allow REST requests:
+* *Allowed*
+* *Require Auth Token* - REST requests are allowed but Auth Token is required.
+* *Forbidden*
 
-*3.* Click *Save* at the bottom of the dialog to save your changes.
+*3.* Switch *COPPA Compliant* to *ON*, if you want the Credential to impose COPPA compliance.
+
+*4.* Select any of the four request tabs and check the individual requests under each one for the Credentials you want to allow/disallow. In this example, the first Requests tab is selected and all requests on this tab are checked and therefore allowed.
+
+*5.* Click *Save* at the bottom of the dialog to save your changes.
 
 ## Creating and Editing Custom Credentials
 
@@ -77,20 +98,31 @@ To create and edit a custom Credential:
 
 *1.* Click the plus ![](/img/fa/plus.png) icon. The *Create Credential* dialog appears:
 
-![](img/SecCred/4.png)
+![](img/SecCred/8.png)
 
 *2.* Complete the mandatory fields for the Credential:
 * *Short Code* - Unique identifier.
 * *Name*
 * *Description*
 
-*3.* Use the toggle buttons at top-right to enable the type of Credential you want - *Player*, *Listener*, or *CB*. In this example, we have selected for a *Player* Credential. When you select *Player*:
+*3.* Use the toggle buttons to enable the type of Credential you want - *Player*, *Listener*, or *CB*. In this example, we have selected for a *Player* Credential. When you select *Player*:
 * *Listener* is automatically selected.
 * You cannot select *CB*, because *Player* and *CB* are mutually exclusive Credential types.
 
-*4.* Under the *Requests*, *LogEventRequests*, and *LogChallengeRequests* tabs, check for the requests you want to allow for the Credential.
+In this example, we've selected for a *Player/Listener* custom Credential.
+
+*4.* Use the *REST Policy* drop-down to select whether or not you want your custom Credential to allow REST requests:
+* *Allowed*
+* *Require Auth Token* - REST requests are allowed but Auth Token is required.
+* *Forbidden*
+
+*5.* Switch *COPPA Compliant* to *ON*, if you want the Credential to impose COPPA compliance.
+
+*6.* Under the *Requests*, *LogEventRequests*, and *LogChallengeRequests* tabs, check for the requests you want to allow for the Credential.
 
 <q>**AdminRequests.** Remember, *AdminRequests* cannot be selected for a Player Credential!</q>
+
+*7.* Click to *Save* your new Credential.
 
 ## Resetting a Credential's Secret
 
