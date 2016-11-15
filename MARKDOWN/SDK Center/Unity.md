@@ -5,7 +5,14 @@ src: /SDK Center/Unity.md
 
 # Unity3D SDK
 
-Download the GameSparks [Unity SDK v5.4 package](http://repo.gamesparks.net.s3-eu-west-1.amazonaws.com/unity-sdk/Gamesparks_Unity_5.4.0.59.unitypackage)
+Download the GameSparks <a href="http://repo.gamesparks.net.s3-eu-west-1.amazonaws.com/unity-sdk/latest.html" target="\_blank">Unity SDK package</a>
+
+
+## V5.4.0.91
+
+* Resolved tendency to hang in Windows Unity Editor
+* Fixed IPv6
+* Addressed other minor bugs
 
 ## V5.4.0
 

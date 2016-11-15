@@ -15,27 +15,27 @@ You can use Callbacks to run separate, customized Cloud Code scripts against dif
 
 <q>**Creating Credentials!** For a refresher, see [Security Credentials](/Documentation/Configurator/Integrations/Security Credentials.md).</q>
 
+![](img/CustomCallback10.png)
+
+*3.*  When you create each Credential, make sure you switch on the *CB* checkbox.  This tells the platform that this credential is going to be exclusively used for Callback scripts:
+
 ![](img/CustomCallback1.png)
 
-*2.*  When you create each Credential, ensure to switch on the *CB* checkbox.  This tells the platform that this credential is going to be exclusively used for Callback scripts:
-
-![](img/CustomCallback2.png)
-
-*3.* In the portal, select *Configurator > Cloud Code*.
+*4.* In the portal, select *Configurator > Cloud Code*.
 
 ![](img/CustomCallback3.png)
 
-*4.* Select *Callbacks* from the *Bindings* list, and edit one of the custom credentials that you created in *Step 1* or *2*.
+*5.* Select *Callbacks* from the *Bindings* list, and edit one of the custom credentials that you created in *Step 1* or *2*.
 
 ![](img/CustomCallback5.png)
 
-*5.* Enter the Cloud Code you want to be executed for the Callback. For the purposes of our tutorial, we'll just write a Script to return a message:
+*6.* Enter the Cloud Code you want to be executed for the Callback. For the purposes of our tutorial, we'll just write a Script to return a message:
 
 ```
 Spark.setScriptData("RESPONSE_RAW", "Hello World!");
 ```
 
-*6.* Now that the Callback script is created, we can see this working by using an API Post Request in the following format:
+*7.* Now that the Callback script is created, we can see this working by using an API Post Request in the following format:
 
 https ://{stage}.gamesparks.net/callback/{apiKey}/{credential}/{credentialSecret}
 
