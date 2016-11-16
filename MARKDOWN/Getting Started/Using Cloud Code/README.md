@@ -121,3 +121,4 @@ The Get Position Event is essentially a reverse of the Set Position Event. Here 
 * [Unreal](/Getting Started/Using Cloud Code/Unreal Cloud Code.md)
 * [ActionScript](/Getting Started/Using Cloud Code/ActionScript Cloud Code.md)
 * [Android](/Getting Started/Using Cloud Code/Android Cloud Code.md)
+* [Lua](/Getting Started/Using Cloud Code/Lua Cloud Code.md)

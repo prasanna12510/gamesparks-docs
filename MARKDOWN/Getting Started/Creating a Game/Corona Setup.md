@@ -76,7 +76,7 @@ end
 
 The function will print the availability condition as well as perform any logic when the result of the condition is true or false. This is useful to determine if the GameSparks API is ready to use or not.
 
-*5.* For the next step we'll be connecting to our Game's backend using the *API key* and *secret*:
+*5.* For the next step we'll be connecting to our Game's backend using the *API key* and *Secret*:
 
 ```
 
@@ -97,7 +97,7 @@ gs.connect()
 ```
 
  Once you've run your project, the availability function will inform you if you're successfully connected:
- * If no output is shown from the function and your debugger is stuck in a connection loop then double-check your credentials (*API Key and Secret*) and check that you are connected to the internet.
+ * If no output is shown from the function and your debugger is stuck in a connection loop then double-check your credentials (*API Key* and *Secret*) and check that you are connected to the internet.
  * Once you've successfully connected, you should get the message "Availability: True" in your output console.
 
-Next we'll be learning to register and authenticate users.
+Next we'll be learning to [register and authenticate](/Getting Started/Using Authentication/Lua Authentication.md) users.
