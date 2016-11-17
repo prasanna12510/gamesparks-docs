@@ -50,12 +50,14 @@ When you create or edit a Credential, there are four tabs for different requests
 
 ### Enabling COPPA Compliance
 
-If you enable a Credential as COPPA compliant, then certain data defined by the Children's Online Privacy Protection Act of 1998 will not be stored on the GameSparks platform. Any player with this Credential connecting to the platform will not be allowed to authenticate through a 3rd-party social account. Blocking social account authentication for COPPA Credentials in this way ensures no Personally Identifiable Information (PII) will be stored on the platform.
+If you enable a Credential as COPPA compliant:
+* Certain data defined by the Children's Online Privacy Protection Act of 1998 will not be stored on the GameSparks platform. Any player with this Credential connecting to the platform will not be allowed to authenticate through a 3rd-party social account. Blocking social account authentication for COPPA Credentials in this way ensures no Personally Identifiable Information (PII) will be stored on the platform.
+* Secondly, the latitude/longitude information will not be stored on the platform for players connecting with a COPPA Credential.
 
 ### Selecting REST Policy
 
 Select to allow or forbid the Credential to accept REST requests:
-* If you allow REST requests for a Credential, you can specify that an authorization token is or is not required when making REST requests.
+* If you allow REST requests for a Credential, you can specify that an authorization token is required for added security when making REST requests.
 
 ## System Credentials
 
@@ -111,12 +113,12 @@ To create and edit a custom Credential:
 
 In this example, we've selected for a *Player/Listener* custom Credential.
 
-*4.* Use the *REST Policy* drop-down to select whether or not you want your custom Credential to allow REST requests:
+*4.* Use the *REST Policy* drop-down to select whether or not you want your custom Credential to allow [REST requests](#Selecting REST Policy):
 * *Allowed*
 * *Require Auth Token* - REST requests are allowed but Auth Token is required.
 * *Forbidden*
 
-*5.* Switch *COPPA Compliant* to *ON*, if you want the Credential to impose COPPA compliance.
+*5.* Switch *COPPA Compliant* to *ON*, if you want the Credential to impose [COPPA compliance](#Enabling COPPA Compliance).
 
 *6.* Under the *Requests*, *LogEventRequests*, and *LogChallengeRequests* tabs, check for the requests you want to allow for the Credential.
 
