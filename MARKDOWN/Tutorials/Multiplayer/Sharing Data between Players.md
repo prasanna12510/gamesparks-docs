@@ -101,7 +101,7 @@ We will now use the Portal Test Harness and NoSQL Explorer to test the configura
    }
    ],
    "TRACK": "Track1",
-   "TIME": "90"
+   "TIME": 90
   }
 ```
 If successful you will have received a LogEventResponse similar to this.
@@ -209,7 +209,7 @@ The response will look similar to this and should be the fastest 'timeTaken' doc
        }
       ],
       "trackName": "Track1",
-      "timeTaken": "90",
+      "timeTaken": 90,
       "playerId": "537cc064e4b0e44047e554d8"
       }
     ]
