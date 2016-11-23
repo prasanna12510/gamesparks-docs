@@ -42,17 +42,3 @@ To add summary fields to your Running Total, click on the plus icon. Each runnin
     * *Last* - The Running Total will be created to track the last value posted.
     * *Supplemental* \- A Running Total will be created with no value calculated. You can use this when you want to store some extra information within the game context but do not want this to affect the Leaderboard ranking. (For example, in a racing game you can keep note of weather conditions on the track as well as player lap times but changing weather conditions do not affect the player's Leaderboard ranking.)
   * *Filter Type & Filter Value* - Allows you to define an optional filter for values tracked (<, >, * , and so on). Events posted that do not match the filter are ignored.
-
-![](img/RunningTotals/12.png)
-
-### Filter Examples
-
-Here are some useful examples of using filters.
-
-Example 1: *Only process scores over 100*
-
-![](img/RunningTotals/3.png)
-
-Example 2: *Only include scores from levels 10 - 20.*
-
-![](img/RunningTotals/4.jpg)
