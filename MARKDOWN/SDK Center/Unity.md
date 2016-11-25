@@ -9,7 +9,7 @@ Download the GameSparks [Unity SDK Package](https://s3-eu-west-1.amazonaws.com/r
 
 ## V5.4.0.104
 
-* Resolve Meta file issue
+* Resolved Meta file issues
 * Restored native code for Xbox one
 * Addressed CultureInfo bug in GSJson file
 
