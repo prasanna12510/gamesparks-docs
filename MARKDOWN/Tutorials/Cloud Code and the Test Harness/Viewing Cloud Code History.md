@@ -21,7 +21,7 @@ The Cloud Code History tool is designed to allow you to select one Snapshot - fr
 
 ## Comparing Snapshots
 
-The Cloud Code History tool is designed to be read right-to-left:
+The Cloud Code History tool is designed to be read left-to-right:
 * The left column - *Base* - shows the current Workspace Configuration and latest saved Snapshot of the game.
 * The right column - *Compare to* - shows all other Snapshots that pre-date the one that is selected in the *Base* and that are not Cloud Code equivalent to the selected *Base* Snapshot.
 

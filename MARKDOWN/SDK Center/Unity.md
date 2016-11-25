@@ -5,7 +5,13 @@ src: /SDK Center/Unity.md
 
 # Unity3D SDK
 
-Download the GameSparks [Unity SDK Package](https://s3-eu-west-1.amazonaws.com/repo.gamesparks.net/unity-sdk/Gamesparks_Unity_5.4.0.91.unitypackage).
+Download the GameSparks [Unity SDK Package](https://s3-eu-west-1.amazonaws.com/repo.gamesparks.net/unity-sdk/GameSparks_Unity.unitypackage).
+
+## V5.4.0.104
+
+* Resolve Meta file issue
+* Restored native code for Xbox one
+* Addressed CultureInfo bug in GSJson file
 
 ## V5.4.0.91
 

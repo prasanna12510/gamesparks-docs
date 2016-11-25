@@ -8,10 +8,9 @@ src: /Tutorials/Real-Time Services/Setting Up Real-Time Matchmaking.md
 ## Setting Up the SDK
 
 Before we begin you will need a project with the main GameSparks SDK integrated and set up. The real-time services SDK is bundled in with the Unity SDK:
-* [Unity SDK Package download](http://repo.gamesparks.net/unity-sdk/Gamesparks_Unity_5.3.5.209.unitypackage)
+* [Unity SDK Package download](https://s3-eu-west-1.amazonaws.com/repo.gamesparks.net/unity-sdk/GameSparks_Unity.unitypackage)
 
 You can find a tutorial on how to setup the Unity SDK [here](/SDK Center/Unity.md). Once you have set up the Unity SDK, you are ready to go.
-
 
 ## Setting Up Real-Time Matches
 
