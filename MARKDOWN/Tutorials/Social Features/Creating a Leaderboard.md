@@ -130,7 +130,7 @@ Note that as well as the request and response shown in the *Inspector* that ther
 * Every time a player beats their previous best they will receive a message of this type.
 * If Player1 logs another score that is 10 or less they will not receive a *NewHighScoreMessage*.
 
-*3.* Now repeat the authorization and log event step for the other four users that you registered. Use an increasing score for each user, fro example, 200 for Player2, 300 for Player3, and so on.
+*3.* Now repeat the authorization and log event step for the other four users that you registered. Use an increasing score for each user, for example, 200 for Player2, 300 for Player3, and so on.
 
 ### Retrieving Leaderboard Data
 

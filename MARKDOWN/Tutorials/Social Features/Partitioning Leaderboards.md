@@ -21,11 +21,12 @@ Now we have the event configured, we can create the leaderboard to consume the e
 
 ![](img/Partition/2.jpg)
 
-<q>**Note:** We've set the Group value of Country to PARTITION, this option is available for attributes that are grouped in the running total, and tells the platform to create a new leaderboard each time it gets a new value for this field.</q>
+<q>**Note:** We've set the Group value of Country to PARTITION, this option is available for attributes that are grouped in the running total, and tells the platform to create a new Leaderboard each time it gets a new value for this field.</q>
 
-Each leaderboard partition has it's own short code that will use the format HSBC.<PARTITION_CODE>.<PARTITION_VALUE>. For example, If you posted UK in as the country code, the leaderboard that would be created would HSBC.COUNTRY.UK.
+* Each Leaderboard partition has it's own Short Code that will use the format: HSBC.<< PARTITION_CODE >>.<< PARTITION_VALUE >>.
+  * For example, If you posted UK in as the country code, the Leaderboard that would be created would HSBC.COUNTRY.UK.
 
-You can have multiple partitions for each leaderboard, in which case the format for short codes of the resulting leaderboards would be:
+* You can have multiple partitions for each Leaderboard, in which case the format for short codes of the resulting Leaderboards would be:
 
 HSBC.<< PARTITION_1_CODE >>.<< PARTITION_1_VALUE >>.<< PARTITION_2_CODE >>.<< PARTITION_2_VALUE >>...and so on.
 
