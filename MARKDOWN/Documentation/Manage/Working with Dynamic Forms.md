@@ -19,7 +19,9 @@ This section covers:
 
 ### Creating a Screen
 
-Whenever you want to create a Dynamic Form, you should start with a Screen. A Screen is powered by the structure of Snippets that you create. You can have as many Screens as you want, however a Screen should have a meaningful name. In this section, we'll call the Screen we create *Tutorial Players*.
+Whenever you want to create a Dynamic Form, you should start with a Screen:
+* A Screen is powered by the structure of Snippets that you create and then link to the Screen.
+* You can have as many Screens as you want, however a Screen should have a meaningful name. In this section, we'll call the Screen we create *Tutorial Players*.
 
 *1.* To create a Screen, navigate to *Manage > Admin Screens*:
 
@@ -158,7 +160,7 @@ The next step is to remove the logic from the Screen itself, retaining only this
 
 ```
 
-*4.* Click the Click the play ![](/img/fa/play.png) icon to render the GSML into the right panel and preview it:
+*4.* Click the play ![](/img/fa/play.png) icon to render the GSML into the right panel and preview it:
 
 ![](img/DynamicForms/29.png)
 
@@ -270,6 +272,7 @@ function view(data){
     return form;
 }
 }
+
 ```
 
 After previewing the results using the ![play](/img/fa/play.png)  icon, the Response JSON quadrant obtains the list of Achievements and Virtual Goods for the current game (if any), then passes them into Script Data, where later it can be accessed by the Handlebars quadrant.  
@@ -376,6 +379,7 @@ We want to search for specific search criteria against the player. To do this, w
 {{/if}}
 
 </gs-query>
+
 ```
 
 The Achievement and Virtual Good Script Data that we retrieved earlier, will be passed onto the Handlebars quadrant, where we can manipulate our GSML based on it.  
@@ -396,7 +400,7 @@ You can see that the *user_query* has been rendered within the form. This allows
 
 ### player_search_results Snippet
 
-When we click the Submit button on the Players Screen, all the data input into the form that was built using *player_search* Snippet will be collected and passed to the *player_search_results* Snippet, which does not yet exist. As the target of the form is defined as *player_results*, the output of this Snippet will be rendered there. We can now test that the query we've built is submitted correctly into the *player_search_results* Snippet.
+When we click the Submit button on the Players Screen, all the data input into the form that was built using *player_search* Snippet will be collected and passed to the *player_search_results* Snippet, which does not yet exist. Because the target of the form is defined as *player_results*, the output of this Snippet will be rendered there. We can now test that the query we've built is submitted correctly into the *player_search_results* Snippet.
 
 *8.* Create a new Snippet called *player_search_results* and enter the following into the JavaScript quadrant:
 
@@ -469,9 +473,9 @@ function view(data){
 
 ```
 
-*playerCount* will contain the count of how how many records matched our query.  
+* *playerCount* will contain the count of how how many records matched our query.  
 
-*results* will have all of the data associated with each player that matched the query, limited to 5 search results for the tutorial.  
+* *results* will have all of the data associated with each player that matched the query, limited to 5 search results for the tutorial.  
 
 *12.* Append the following GSML code to the *player_search_results* Handlebars quadrant:
 
@@ -530,7 +534,7 @@ function view(data){
 }
 ```
 
-We could pass in the userName of the player from the *player_search_results* Snippet, however typically it's best practice to pass in as little data as possible into the Snippet and make it self-contained. This allows re-use of the Snippet in different Dynamic Forms without requiring any changes to be made in the code.  
+We could pass in the userName of the player from the *player_search_results* Snippet. However, it's best practice to pass in as little data as possible into the Snippet and make it self-contained. This allows re-use of the Snippet in different Dynamic Forms without requiring any changes to be made in the code.  
 
 *15.* Enter the following GSML code into the Handlebars quadrant:
 

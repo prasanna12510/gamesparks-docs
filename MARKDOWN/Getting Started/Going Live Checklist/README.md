@@ -35,6 +35,10 @@ When you have completed your game configuration, created a Snapshot, and you are
 
 *4.*	Publish the Snapshot to Live.
 
+<q>**Please Let us Know about your Game Launch!** When you're approaching live launch of your game, please let us know with an advance notice email to: <a href="mailto:david.anderson@gamesparks.com;Anthony.mulhall@gamesparks.com?Subject=Going%20Live!">going live</a>. We'd like to make absolutely sure your game launch goes as smoothly as possible!</q>
+
+
+
 ## Additional Notes
 
 Please also note the following when you Publish to Live:
