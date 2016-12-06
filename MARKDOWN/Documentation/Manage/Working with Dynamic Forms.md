@@ -119,7 +119,10 @@ Enter the details for the new Snippet:
 
 The *Snippet Builder* is divided into 4 quadrants:
 
-**1** - The top-left quadrant is for JavaScript or Cloud Code that provides the logic and behavior of the Dynamic Form.
+**1** - The top-left quadrant is for JavaScript or Cloud Code that provides the logic and behavior of the Dynamic Form. This quadrant is divided into two parts:
+  * **1a** - The lower main *JavaScript* section is where you enter your JavaScript/Cloud Code.
+  * **1b** - Allows you to define the input data for your script. This is useful when developing and debugging your script if it uses input data to change it's behaviour. The data set in this section is available through your script using *Spark.getData().scriptData*. See [example](#Debugging Scripts for Input Data) below.
+
 
 **2** - The top-right quadrant is for adding HTML/GSML or Handlebars code that renders the view.
 
@@ -144,6 +147,18 @@ The typical Snippet creation workflow breaks down into 4 steps:
 * *Step 4* - **Test Snippet Presentation.** To test all of this, we can use the ![play](/img/fa/play.png)  icon to preview the rendering of the Snippet in quadrant **3**.
 
 However, this order may not always be the preferred way. For example, we might design a Screen using the Handlebars quadrant first, then realize we need to retrieve some more Script Data by then calling that information using the JavaScript quadrant. As mentioned earlier, there are many routes to creating Snippets.
+
+### Debugging Scripts for Input Data
+
+If the script you're using to drive your Screen takes input data and its behavior is dependent on the value of that data, then the Snippet Builder has very useful debugging capability for this sort of case. You can use **1b** to define different input values and the data set in this sub-section is available through your script in **1a** using *Spark.getData().scriptData*. When this is rendered through the GSML logic in **2** we can preview each input to test the resultant outcomes in **3**. Here's a simple example to illustrate this useful function.  
+
+* In the first case, we enter *value* for *key* in **1b** and see the expected outcome in **3**:
+
+![](img/DynamicForms/32.png)
+
+* In the second case, we enter *value1* for *key* in **1b** and see the expected alternative outcome in **3**:
+
+![](img/DynamicForms/33.png)
 
 ### Linking the Screen to the Snippet
 
@@ -210,6 +225,7 @@ This Snippet will be solely responsible for displaying the *gs-query* and passin
         <gs-submit>Submit</gs-submit>
     </gs-col>
 </gs-form>
+
 ```
 
 As seen above, the Snippet contains a form that will execute the *player_search_results* Snippet, and render it's output in the placeholder, *player_results*, which is also defined in our Screen. The Snippet also contains another Snippet executor for *user_query*. Running the Screen now would render the following output:  
@@ -532,6 +548,7 @@ function view(data){
     return form;
 }
 }
+
 ```
 
 We could pass in the userName of the player from the *player_search_results* Snippet. However, it's best practice to pass in as little data as possible into the Snippet and make it self-contained. This allows re-use of the Snippet in different Dynamic Forms without requiring any changes to be made in the code.  
@@ -615,6 +632,7 @@ function view(data){
     return form;
 }
 }
+
 ```
 
 When the Currencies are set we can then display them using GSML.  
@@ -622,6 +640,7 @@ When the Currencies are set we can then display them using GSML.
 *17.* Enter the following GSML into the Handlebars quadrant:
 
 ```
+
 <gs-form snippet="player_currencies?action=update&playerId={{currencies.playerId}}" target="currencies__{{currencies.playerId}}">
 <gs-title-block title="Currencies" padding="5" height="250">
     <gs-row>
@@ -680,6 +699,7 @@ When the Currencies are set we can then display them using GSML.
 
 </gs-title-block>
 </gs-form>
+
 ```
 
 As seen above, the Snippet is built as a form and is submitted to the placeholder that was set in *player_master.* It passes in an additional variable, *action* which is set to *edit*. We can now edit our *player_currencies* JavaScript to detect if this variable has been passed, and if so, edit the values and refresh the Snippet.  
@@ -740,6 +760,7 @@ function getDifference(balance, toSet){
     return toSetInt - balance;
 }
 }
+
 ```
 
 The code above will check if the action has been performed, and, if so, it will edit the currencies that were passed in.  
@@ -835,6 +856,7 @@ function setVGoods(shortCode, owned, toSet){
     }
 }
 }
+
 ```
 
 *21.* Enter the following GSML into the Handlebars quadrant for the *player_virtual_goods* Snippet:
@@ -865,6 +887,7 @@ function setVGoods(shortCode, owned, toSet){
     {{/if}}
 </gs-title-block>
 </gs-form>
+
 ```
 
 *22.* Enter the following Cloud Code into the JavaScript quadrant for the *player_achievements* Snippet:
@@ -938,6 +961,7 @@ function update(data){
     form.updated = true;
 }
 }
+
 ```
 
 *23.* Enter the following GSML into the Handlebars quadrant for the *player_achievements* Snippet:
@@ -1001,6 +1025,7 @@ function update(data){
 {{/if}}
 
 </gs-title-block>
+
 ```
 
 *24.* Enter the following Cloud Code into the JavaScript quadrant for the *player_details* Snippet:
@@ -1069,6 +1094,7 @@ function update(data){
     form.updated = true;   
 }
 }
+
 ```
 
 *25.* Enter the following GSML into the Handlebars quadrant for the *player_details* Snippet:
@@ -1129,6 +1155,7 @@ function update(data){
 
 </gs-title-block>
 </gs-form>
+
 ```
 
 The complete *player_master* Master Snippet with all sub-Snippets:
@@ -1151,11 +1178,11 @@ The complete *player_master* Master Snippet with all sub-Snippets:
 
 *2.* Then in the snippet called *popup_example* we use that variable to let the pop-up snippet know when to show the pop-up and when to go back to the last screen
 
-![](img/DynamicForms/17.png)
+![](img/DynamicForms/30.png)
 
 *3.* We can follow the steps for this snippet:
 
-![](img/DynamicForms/18.png)
+![](img/DynamicForms/31.png)
 
 1. We sent *action=view* from the previous screen, so we can check this in a switch-case to see if we should view or exit the pop-up.
 2. If there is other data you want to send with the form, you can do that in the view method.
