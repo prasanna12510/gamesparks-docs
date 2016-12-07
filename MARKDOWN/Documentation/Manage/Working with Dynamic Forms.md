@@ -43,7 +43,7 @@ On the *Screen Builder*, there are three tabs:
 * *Snippets* - Create and configure Snippets for your Screens.
 * *Charts* - Charts will not be covered here, instead you can find a separate tutorial on them [here](/Tutorials/Analytics, Segmentation and Game Management/Building Custom Analytics Dashboards.md).
 
-<q>**Note:** There are three default Screens available when you create a game: *Leaderboards*, *Players*, and *Script Log*.</q>
+<q>**Note:** There are three default Screens available when you create a game: *Leaderboards*, *Players*, and *Script Log*. Default Snippets are also available to suppport these Screens.</q>
 
 *2.* On the *Screen Builder*, click the plus ![](/img/fa/plus.png) icon. The *Create Screen* dialog appears:
 
