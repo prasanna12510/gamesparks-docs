@@ -142,9 +142,11 @@ We can define variables for input values entered onto the corresponding Screen, 
 
 The typical Snippet creation workflow breaks down into 4 steps:
 * *Step 1* - **Create Snippet Script Data.** Normally, our first thought would be to know what Script Data the Snippet will require. Therefore, we'll typically start the creation of most Snippets using the JavaScript quadrant **1**:
-* *Step 2* - **Check Scipt Data.** To ensure we are getting the right data that we require for the Snippet at this stage, we can preview the Cloud Code using the ![play](/img/fa/play.png)  icon. This will generate a JSON formatted response in the bottom-left JSON response quadrant **4**.
-* *Step 3* - **Design Snippet Screen Presentation.** Once we are happy that we have all the required data for the Snippet, we can design how it will be presented to the Screen by adding the HTML / GSML code for the elements we want to see in quadrant **2**. Using Handlebars, we can also access and manipulate the data from the JSON response.
-* *Step 4* - **Test Snippet Presentation.** To test all of this, we can use the ![play](/img/fa/play.png)  icon to preview the rendering of the Snippet in quadrant **3**.
+* *Step 2* - **Check Script Data.** To ensure we are getting the right data that we require for the Snippet at this stage, we can preview the Cloud Code using the ![play](/img/fa/play.png) icon in quadrant **1a**. This will generate a JSON formatted response in the bottom-left JSON response quadrant **4**.
+* *Step 3* - **Design Snippet Screen Presentation.** Once we're happy that we have all the required data for the Snippet, we can design how it will be presented to the Screen by adding the HTML / GSML code for the elements we want to see in quadrant **2**. Using Handlebars, we can also access and manipulate the data from the JSON response.
+* *Step 4* - **Test Snippet Presentation.** To test all of this, we can use the ![play](/img/fa/play.png) icon in quadrant **4** to preview the rendering of the Snippet in quadrant **3**.
+
+<q>**Why Two Play Icons?** If you click the play icon in **1a** this will also trigger a final rendering of the Snippet in **3**. However, the play icon in **4** allows you to change the JSON response value and preview a final rendering of the Snippet in **3** but without affecting your main script - the HTML / GSML code in **3** pulls from the JSON response in **4**.
 
 However, this order may not always be the preferred way. For example, we might design a Screen using the Handlebars quadrant first, then realize we need to retrieve some more Script Data by then calling that information using the JavaScript quadrant. As mentioned earlier, there are many routes to creating Snippets.
 
