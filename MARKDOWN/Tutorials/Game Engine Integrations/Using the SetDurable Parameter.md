@@ -13,7 +13,7 @@ For instance, a player is using a cellular connection on a train to play Tic Tac
 
 However, with SetDurable, the player can still challenge a friend, and set their first turn, load a cached instance of a challenge and also take their turn. Then when the train emerges from the tunnel and the player's connection is restored, the game sends these requests in the same order they were submitted.
 
-Notice that SetDurable must not be used in conjunction with any of the Authentication calls from the Request API.
+<q>**Note** SetDurable must not be used in conjunction with any of the Authentication calls from the Request API.</q>
 
 ## Examples
 
