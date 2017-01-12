@@ -7,6 +7,8 @@ src: /Tutorials/Real-Time Services/Understanding GameSparks Real-Time.md
 
 This tutorial provides an introductory overview for working with GameSparks real-time.
 
+<q>**Real-Time Best Practices?** If you plan to implement real-time multiplayer scenarios and matches in your networked games, please review the following [Real-Time Best Practices](/Tutorials/Real-Time Services/Real-Time Best Practices.md) topic before you proceed.</q>
+
 ## Creating a Real-Time session
 
 Real-Time sessions are dependent on Real-Time matches. A Match must be configured to support a real-time session once it is found. When a Match has been found, a [MatchFoundMessage](/API Documentation/Message API/Multiplayer/MatchFoundMessage.md) will be sent to the players involved with three important variables:
