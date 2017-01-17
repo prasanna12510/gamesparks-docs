@@ -59,7 +59,7 @@ GS.Initialise(&gsPlatform);
 
 ```
 
-After the connection has been established the module will use the GameSparksAvailable function to issue a callback event:
+After the connection has been established the module will use the *GameSparksAvailable* function to issue a callback event:
 
 ```
 
@@ -90,9 +90,9 @@ To authenticate a player in C++ you have three options for authentication:
 
 ### Username/Password Authentication
 
-You can use the GameSparks username and password system - when a players use a registration request to register on the platform, they can use their credentials to log in.
+You can use the GameSparks username and password system - when players use a registration request to register on the platform, they can use their credentials to log in.
 
-Registration Request:
+**Registration Request:**
 
 ```
 
@@ -107,7 +107,7 @@ request.Send(RegistrationRequest_Response);
 
 ```
 
-Registration Response:
+**Registration Response:**
 
 ```
 
@@ -125,7 +125,7 @@ void RegistrationRequest_Response(GameSparks::Core::GS& gsInstance, const GameSp
 
 ```
 
-Authentication Request:
+**Authentication Request:**
 
 ```
 
@@ -138,7 +138,7 @@ request.Send(AuthenticationRequest_Response);
 
 ```
 
-Authentication Response:
+**Authentication Response:**
 
 ```
 
@@ -152,7 +152,7 @@ void AuthenticationRequest_Response(GameSparks::Core::GS& gsInstance, const Game
         // If no error
         else
         {
-          //DO something when successful
+          //Do something when successful
         }
 }
 
@@ -189,9 +189,9 @@ request.Send(FacebookConnectRequest_Response);
 
 After authenticating, the user can now use other GameSparks requests and messages.
 
-## Using Log Events and Cloud code
+## Using Log Events and Cloud Code
 
-Log Events allow you to run custom logic coded in Cloud code. Cloud code is powerful, harnessing the power of JavaScript and the convenience of GameSparks API.
+Log Events allow you to run custom logic coded in Cloud Code. Cloud Code is powerful, harnessing the power of JavaScript and the convenience of GameSparks API.
 
 Here's an example of calling an event from C++ and passing in attribute values:
 
@@ -214,7 +214,7 @@ request.Send(fooEvent_Response);
 
 ```
 
-Here's how to handle the response and retrieve output values. In our example we're trying to retrieve an object by referring to the object's key:
+Here's how to handle the response and retrieve output values. In our example, we're trying to retrieve an object by referring to the object's key:
 
 ```
 
@@ -249,7 +249,7 @@ Spark.setScriptData("exampleKey", val);
 To learn how to use Cloud Code and events, check out the [using Cloud Code](/Tutorials/Cloud Code and the Test Harness/Using Cloud Code.md) tutorial.
 
 
-You can also augment your own requests with extra logic to suit your needs. To pass any input into a request you'll need to do this using 'scriptData'. For this example, we're going to send an E-Mail variable with the registration request to save an E-mail reference against our user.
+You can also augment your own requests with extra logic to suit your needs. To pass any input into a request you'll need to do this using *scriptData*. For this example, we're going to send an E-Mail variable with the registration request to save an E-mail reference against our user:
 
 ```
 
@@ -267,7 +267,7 @@ request.SetDisplayName("abcdefgh");
 request.SetScriptData(scriptData);
 request.SetPassword("abcdefgh");
 
-// send the request
+//Send the request
 request.Send(RegistrationRequest_Response);
 
 ```

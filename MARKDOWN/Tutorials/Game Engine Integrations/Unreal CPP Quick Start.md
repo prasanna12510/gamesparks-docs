@@ -5,6 +5,16 @@ src: /Tutorials/Game Engine Integrations/Unreal CPP Quick Start.md
 
 # Unreal CPP QuickStart
 
+## Project.build.cs
+
+In your build file include the following:
+
+```
+PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "GameSparks", "OnlineSubsystem" });
+```
+
+Make sure *GameSparks* and *OnlineSubsystem* are both included.
+
 ## Initialization
 
 To integrate the GameSparks platform into your C++ project, perform the following two initialization stages:

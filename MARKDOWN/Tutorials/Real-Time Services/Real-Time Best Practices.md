@@ -3,6 +3,8 @@ nav_sort: 2
 src: /Tutorials/Real-Time Services/Real-Time Best Practices.md
 ---
 
+# Real-Time Best Practices
+
 ## Limitations
 
 On  | Limit
@@ -11,13 +13,16 @@ Packet Size    | 1400 bytes
 
 ## Recommended Bandwidth Usage and Maximum Players
 
-For optimal perfomance and best player experience, we recommend the following standard-level usage of the platform for data transfer and maximum player numbers in your networked games:
+For optimal performance and best player experience, we recommend the following standard-level usage of the platform for bandwidth and maximum player numbers in your networked games:
 
-Device Type | Data Transfer | Maximum Players per Match
+Device Type | Bandwidth (kilobytes per second) | Maximum Players per Match
 -----  | ----------- | -----------
-Console or Desktop | 19 kilobytes per second | Approximately 60
-Mobile | 2 kilobytes per second | 15 to 20
+Console or Desktop | 19 kbps | Approximately 60
+Mobile | 2 kbps | 15 to 20
 
+### Balancing Frequency of Updates against Available Bandwidth
+
+When implementing Real-Time games it's important to balance game-state updates per second against available bandwidth - although frequent updates will give your players a smoother gaming experience, this can quickly eat into available bandwidth. This issue is especially relevant for Real-Time games played on mobile devices, where around 4 to 6 updates per second is a safe baseline frequency to work with.
 
 ## Performance Tips
 
@@ -25,9 +30,7 @@ There are several important factors that affect the performance of networked mul
 
 ### Tick Rate
 
-With GameSparks you can implement Real-Time scripts which allows the server to control the flow of packets in your game and to run code on data contained in those packets.
-
-This allows you to control when the server broadcasts updates to players. This is an example of a *server-authoritative model* where each client sends updates to the server. The server then sends back details of the entire game-state at scheduled regular intervals. This interval is called the tick-rate.
+With GameSparks you can implement Real-Time scripts which allows the server to control the flow of packets in your game and to run code on data contained in those packets. Doing this allows you to control when the server broadcasts updates to players. This is an example of a *server-authoritative model* where each client sends updates to the server. The server then sends back details of the entire game-state at scheduled regular intervals. This interval is called the tick-rate.
 
 Tick-rate reduces the traffic from the server to the client by not requiring the server to immediately respond to each packet from each client. It also reduces the processing done by the server because processing can be done in a regular loop instead of having to process each packet as it arrives.
 
@@ -41,7 +44,7 @@ As the client waits for the next position update from the server it is moving th
 
 ### Packet Size, Packet Frequency, and when to Send Packets
 
-The golden rule for creating the best networking experience for your players is to send the minimal amount of data is infrequently as possible!
+The golden rule for creating the best networking experience for your players is to send the minimal amount of data as infrequently as possible!
 
 #### Packet Size
 
@@ -68,7 +71,7 @@ Another thing to consider is what you actually need to send in each packet:
 
 ### Protocol Choice - UDP vs. TCP
 
-GameSparks allows you to choose how you want to send packets via the network. You can choose either TCP (reliable) or UDP (unreliable). Each of these protocols has their advantage so it is important to explain both.
+GameSparks allows you to choose how you want to send packets via the network. You can choose either TCP (reliable) or UDP (unreliable). Each of these protocols has their advantage so it's important to explain both.
 
 #### TCP
 
@@ -78,7 +81,7 @@ TCP is a reliable connection protocol. It works by creating a connection between
 
 UDP is much simpler than TCP. Instead of establishing a connection between two computers we pick an IP address we want to send data to and a port on that computer. The recipient then listens for data coming into that port. The data is transmitted from machine-to-machine until it arrives at the destination.
 
-However, the data does not always arrive. There is some (small) packet loss when sending data via UDP and there is also no guarantee your packets will arrive in order. In general, packets do arrive and in order, but because there is always a chance of loss or packets arriving in the wrong order, this protocol is unreliable.
+However, the data does not always arrive. There's some (small) packet loss when sending data via UDP. There's also no guarantee your packets will arrive in order. In general, packets do arrive and in order, but because there's always a chance of loss or packets arriving in the wrong order, this protocol is unreliable.
 
 #### Which Protocol to Use?
 
@@ -110,7 +113,7 @@ This would include, among other things, making changes to:
 * Server tick-rate.
 * Maximum number of players connected.
 
-You might find you need to make compromises in certain areas in order to deliver the best experience.
+You might find you need to make compromises in certain areas and strike a balance between these in order to deliver the best experience.
 
 <q>**Recommended Usage?** Please review the recommended standard usage for bandwidth usage and maximum players at the [top of this page](#Recommended Bandwidth Usage and Maximum Players).</q>
 
@@ -130,7 +133,7 @@ However, server-validation is also very useful. This allows the server to valida
 
 ### Collision Detection
 
-Collision detection is something that takes some consideration in how you design you networking architecture. The main concern is who decides when a collision has occurred. There are several ways to deal with this, but it generally relates back to ‘fairness’ (and also the latency of your players).
+Collision detection is something that takes some consideration in how you design your networking architecture. The main concern is who decides when a collision has occurred. There are several ways to deal with this, but it generally relates back to ‘fairness’ (and also the latency of your players).
 
 * For example, if player A hits player B during one update, player B might not see that they have been hit during their own update (since latency can cause a delay between updates for each player’s version of the game).
 
@@ -140,7 +143,7 @@ There are many techniques to deal with cases like this and they mostly come down
 
 ## Logs
 
-In order to know that your networking is performing efficiently and optimally you need to keep track of every packet sent back and forth for your game.
+In order to know that your networking is performing efficiently and optimally, you need to keep track of every packet sent back and forth for your game.
 
 Packets should be logged by timestamp and the number of bytes sent and received. Check out the tutorial [here](/Tutorials/Real-Time Services/Clock Synchronization and Network Programming.md) on clock synchronization to see how you can get these data. You can also cache data as they comes in to get average readings per second, which is very useful because UDP packet transmission times can vary.
 
