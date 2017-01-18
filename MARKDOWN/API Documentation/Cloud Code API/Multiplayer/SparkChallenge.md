@@ -225,8 +225,6 @@ _signature_ consumeTurn(string playerId)</p>
 
 _returns_ boolean</p>
 
-<b>params</b>
-
 Takes a turn for a player in a turn based challenge, without sending a ChallengeTurnTaken message.
 
 <b>params</b>
@@ -244,8 +242,6 @@ _signature_ takeTurn(string playerId)</p>
 
 _returns_ boolean</p>
 
-<b>params</b>
-
 Takes a turn for a player in a turn based challenge, and sends a ChallengeTurnTaken message.
 
 <b>params</b>
@@ -262,8 +258,6 @@ playerId - the id of the player who has taken their turn
 _signature_ removePlayer(string playerId)</p>
 
 _returns_ boolean</p>
-
-<b>params</b>
 
 Removes a player from this challenge.
 
