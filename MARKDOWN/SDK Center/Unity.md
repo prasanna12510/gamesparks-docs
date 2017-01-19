@@ -12,7 +12,7 @@ Download the GameSparks [Unity SDK Package](https://s3-eu-west-1.amazonaws.com/r
 * Added ApiDomain and ApiCredential support
 * Fixed Plugins folder and its files
 * Fixed the support for Windows 10 plus IL2CPP Scripting Backend
-* Fixed several other minor bugs
+* Resolved several other minor bugs
 
 ## V5.4.0.104
 
