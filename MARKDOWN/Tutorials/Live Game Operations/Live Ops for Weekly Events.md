@@ -15,7 +15,7 @@ This kind of example is widely customizable. Past examples include loot-drop dis
 
 ## Setting Up Sales Segments
 
-The first thing we need to do before we start creating our management screens is setup the sales Segments.
+The first thing we need to do before we start creating our management screens is set up the sales Segments.
 
 To do this:
 
@@ -23,11 +23,11 @@ To do this:
 
 *2.* Under *Segments* click to *Add* and *Save* a new Segment.
 
-*3.* Edit the new Segments to add the required values to the Segment:
+*3.* Edit the new Segment to add the required values to the Segment:
 
 ![](img/WeekEvents/2.png)
 
-* We can set up a new segment called *Sale* and for this segment we can create as many types of sales as we want. These will be used later to set up our Events.
+* We can set up a new Segment called *Sale* and for this segment we can create as many types of sales as we want. These will be used later to set up our Events.
 
 ## Segmenting Virtual Goods
 
@@ -35,35 +35,35 @@ The next step is to create some Virtual Goods so you can put them on sale.
 
 *1.* Set up the Virtual Good with some basic information and give it a price.
 
-*2.* We then can edit the Virtual Good to give it a new segment value for one of our sales:
+*2.* We then can edit the Virtual Good to give it a new Segment value for one of our sales:
 
 ![](img/WeekEvents/3.png)
 
-* For this example, we've chosen the 10% sale segment for this Virtual Good, and have set the value on this sale to be 90 - that is, 10% off:
+* For this example, we've chosen the 10% sale Segment value for this Virtual Good, and have set the value on this sale to be 90 - that is, 10% off:
 
 ![](img/WeekEvents/4.png)
 
-Now that we have our Virtual Goods setup, we can start building our management screens.
+Now that we have our Virtual Goods set up, we can start building our management screens.
 
 ## First Screen
 
-Before we can start creating our screen layout, we have to make our initial screen. To do this:
+Before we can start creating our Screen layout, we have to make our initial Screen. To do this:
 
 *1.* Select *Manage>Admin Screens*.
 
-*2.* On *Screen Builder*, make sure you are on the *Screens* tab and then select the plus ![](/img/fa/plus.png) icon. This brings up a window where you can give your new screen a name and *Short Code*:
+*2.* On *Screen Builder*, make sure you are on the *Screens* tab and then select the plus ![](/img/fa/plus.png) icon. This brings up a window where you can give your new Screen a name and *Short Code*:
 * The *Short Code* is important to remember, because we'll be using it later.
-* You can also set the Groups to *gameAdmin*. Groups allow you to set specific access to users of your game's portal:
+* You can also set the Groups to *gameAdmin*. Groups allow you to set specific access permissions for users of your game's portal:
 
 ![](img/WeekEvents/5.png)
 
-*3.* Once you’ve created your screen, click on the edit-code button to start editing it:
+*3.* Once you’ve created your Screen, click on the edit-code button to start editing it:
 
 ![](img/WeekEvents/6.png)
 
 This *Sales Events* window will act as a container where we can draw all our content. Therefore, we need to do two things here:
-* Firstly, we will create a placeholder. This will act like a reference to this window so if we want anything to be re-drawn or updated by this window, we can use that placeholder.
-* The second thing we will do is call our first Snippet. In this example, our first Snippet will draw a list of all the Events we have and their details.
+* Firstly, we'll create a placeholder. This will act like a reference to this window so if we want anything to be re-drawn or updated by this window, we can use that placeholder.
+* The second thing we'll do is call our first Snippet. In this example, our first Snippet will draw a list of all the Events we have and their details.
 
 ![](img/WeekEvents/7.png)
 
@@ -79,7 +79,7 @@ At the moment we don’t have a Snippet called *sales_view*, so this won’t do 
 
 ## sales_view Snippet
 
-In order to have this window draw something we have to create a snippet. To do this:
+In order to have this window draw something we have to create a Snippet. To do this:
 
 *1.* In *Screen Builder* select the *Snippets* tab.
 
@@ -95,7 +95,7 @@ In order to have this window draw something we have to create a snippet. To do t
 ![](img/WeekEvents/9.png)
 
 So on this window you can see the following labels for each panel:
-1.	This is the **JSON Input** panel. Here you can simulate data being sent from one Snippet to another or from a Screen to a Snippet. In this window, we'll not be using this, but in our *sales_event* editor Snippet we'll get to see some examples of how this is used.
+1.	This is the **JSON Input** panel. Here you can simulate data being sent from one Snippet to another or from a Screen to a Snippet. We'll not be using this panel for this Snippet, but in our *sales_event* editor Snippet we'll get to see some examples of how this is used.
 2.	This is our **JavaScript Editor** where we can run whatever code we need to before rendering our HTML.
 3.	After we have run our JavaScript code, we can see in the **JSON Output** panel the JSON-formatted response to the code we've written in the **JavaScript Editor** and what we'll be sending to the HTML screens. This is handy for debugging.
 4.	Using the info from panel **3**, we can use **HTML Editor** to write some HTML to put some visual structure on our information. In the case of this Snippet, we'll be creating a simple list with some buttons for creating, editing, and deleting Events.
@@ -110,13 +110,13 @@ The first step is to get the Event details from our DB. Now, at the moment we do
 
 *1.* Select *NoSQL* on the portal.
 
-*2.* Under *Actions*, select the *Create* tab and make sure you have selected *Metadata’* from the drop-down menu. We'll call this collection *sales_events*.
+*2.* Under *Actions*, select the *Create* tab and make sure you have selected *Metadata* from the drop-down menu. We'll call this collection *sales_events*.
 
 *3.* Click *Submit Query* to create the new Metadata colletion:
 
 ![](img/WeekEvents/10.png)
 
-* When you have successfully created the collection you will see a green dialogue box saying the collection has been created.
+* When you have successfully created the *meta.sales_events* collection you will see a confirmation message in green.
 
 Next, we're going to add some dummy-data into this collection.
 
@@ -137,12 +137,12 @@ The document we've inserted into the collection is as follows:
 
 ```
 
-So, now that we have a test-doc in our new collection, let’s go back to our sales_view snippet and see if we can get that data.
+So, now that we have a test-doc in our new collection, let’s go back to our *sales_view* Snippet and see if we can get that data.
 
 We are going to do this in the **JavaScript Editor** panel. All we need to do is create a function which will get all the docs in the *sales_events* collection:
 * The important thing here is to call *Spark.setScriptData()* so that we can send information to the HTML panel for rendering.
 
-In the example below, the first line is going to send data to the HTML renderer. The first field is just the title of the data we want to send. It doesn’t have to be “form” as below, it can be called anything.
+In the example below, the first line is going to send data to the HTML renderer. The first field is just the title of the data we want to send. It doesn’t have to be *form* as used below, it can be called anything.
 
 Likewise, *SnippetProcessor()* and *view()* are names selected for this example, but can also be named anything you like:
 
@@ -170,7 +170,7 @@ You can see, if you click on the play button in the **JavaScript Editor** panel,
 
 ### Drawing the Events List
 
-There are a few parts to drawing this Event list, now that we have the information:
+There are a few parts to drawing this Events list, now that we have the information:
 * The first is to create a title-bar explaining what the screen does, and where we can create a new Event.
 * We'll then need a bar that describes each piece of information we are showing (basically a header for the list).
 * Then we list all the Event details and provide options for deleting or editing them.
@@ -192,14 +192,14 @@ There are a few parts to drawing this Event list, now that we have the informati
 
 ![](img/WeekEvents/13.png)
 
-So, if we take a look at the html code above we can get an idea for how things are laid out:
-* We surrounded everything in a *gs-title-block tag*, which will put all our UI inside a border with a title we can set ourselves.
+So, if we take a look at the HTML code above we can get an idea for how things are laid out:
+* We surrounded everything in a *gs-title-block* tag, which will put all our UI inside a border with a title we can set ourselves.
 * Inside this we created a *gs-row* tag with two columns. The columns are given a width of 10 and 2, so they will be separated with the button on the right-hand-side.
 * All columns must add up to 12 max. Otherwise elements will start to appear out of place.
 * The first thing we have here is just a header explaining what this screen is for.
-* The *gs-link* tag however is a special tag that allows us to run another Snippet when the button is pressed. For the *gs-link* tag, we give it the name of the Snippet we want to run, plus any extra data we want to be passed into the Snippet. In this case, we will pass *action=view* into the Snippet, which will be explained later.
+* The *gs-link* tag, however, is a special tag that allows us to run another Snippet when the button is pressed. For the *gs-link* tag, we give it the name of the Snippet we want to run, plus any extra data we want to have passed into the Snippet. In this case, we'll pass *action=view* into the Snippet, which will be explained later.
 
-*2.* The next thing we will draw is the header-bar for the event list:
+*2.* The next thing we'll draw is the header-bar for the Event list:
 
 ```
 <gs-title-block title="Sales Events" padding="10" margin="0">
@@ -230,9 +230,9 @@ So, if we take a look at the html code above we can get an idea for how things a
 
 ### Listing Events
 
-In order to list events we are going to use [handlebars](http://handlebarsjs.com/) so that we can loop though our list of Events (even though it only has one Event in it at the moment, but we'll be adding more later).
+In order to list Events we're going to use [handlebars](http://handlebarsjs.com/) so that we can loop through our list of Events (even though it only has one Event in it at the moment, but we'll be adding more later).
 
-<q>**Handlebars?** We recommend you look into handlebars if you want to get a sense of what they can be used for, but we will be using them extensively in this tutorial.</q>
+<q>**Handlebars?** We recommend you look into handlebars if you want to get a sense of what they can be used for, but we'll be using them extensively in this tutorial.</q>
 
 ```
 <gs-title-block title="Sales Events" padding="10" margin="0">
@@ -266,9 +266,9 @@ In order to list events we are going to use [handlebars](http://handlebarsjs.com
 
 ```
 
-* You’ll notice that there are two *gs-links* here too, and that they appear to draw two different icons. We are going to use these as buttons for editing and deleting events.
+* You’ll notice that there are two *gs-links* here too, and that they appear to draw two different icons. We are going to use these as buttons for editing and deleting Events.
 * You can see that we call *sales_edit* and *sales_delete* Snippets, and we also pass in an attribute called *eventId*. What we do here is set the *eventId* parameter to be the id of the doc (*\_id.$oid*). That way, we can look-up the specific doc we selected from within those Snippets.
-* Now, we haven’t created *sales_edit* and *sales_delete* yet so don’t worry both these Snippets will be covered later.
+* Now, we haven’t created *sales_edit* and *sales_delete* yet so don’t worry - both these Snippets will be covered later.
 
 ![](img/WeekEvents/15.png)
 
@@ -278,7 +278,9 @@ Take note of the *oid* of this test-doc because we're going to use it in the nex
 
 ## sales_edit Snippet
 
-Create a new snippet called ‘sales_edit’.  Before we start writing any JavaScript or HTML for this Screen, we're going to simulate what we might pass if we went to edit an Event. If you remember from above, when we want to edit an Event we pass in the *oid* of the Event we want to edit. We also pass in *action=view*:
+Create a new snippet called *sales_edit*.  Before we start writing any JavaScript or HTML for this Screen, we're going to simulate what we might pass if we went to edit an Event:
+* If you remember from above, when we want to edit an Event we pass in the *oid* of the Event we want to edit.
+* We also pass in *action=view*:
 
 ![](img/WeekEvents/17.png)
 
@@ -286,7 +288,7 @@ Adding this line to the **JSON Input** panel allows us to do something with this
 
 ### Snippet Layout
 
-In the last Snippet all we needed to do was to get the list of Events and draw some HTML around that information. This snippet will require us to save data as well as display information about the Event.
+In the last Snippet, all we needed to do was to get the list of Events and draw some HTML around that information. This Snippet will require us to save data as well as display information about the Event.
 
 So our Snippet will have two functions - *view()* and *save()*.
 
@@ -350,7 +352,7 @@ Currently, our sales Events are pretty straightforward. We only have information
 So this editor:
 * Will be separated out into 3 rows (name & description, start & end date, and sales segment).
 * We'll use a select tag so that we can get a drop-down menu of all the available sales Events.
-* For the name and description all we need is a text input field. The value of this input field is going to be the name and description of our event. This will allow the user to see the current values of a sale, but also edit them.
+* For the name and description, all we need is a text input field. The value of this input field is going to be the name and description of our Event. This will allow the user to see the current values of a sale, but also edit them.
 
 ![](img/WeekEvents/20.png)
 
@@ -463,7 +465,7 @@ Now that we have this array being passed to the HTML editor, we can use handleba
 
 ### Submit Form
 
-The next thing we need to make this work is to wrap these fields in a form so we can submit all this data.
+The next thing we need to make this work is to wrap these fields in a form so we can submit all these data.
 
 We're going to use the Snippet itself as the target for the form, but we'll set the action to *save*. That way we can run the *save()* function:
 
@@ -521,15 +523,15 @@ We're going to use the Snippet itself as the target for the form, but we'll set 
 
 ```
 
-If we break down the form into just the tags we have added, you can see that we also set the target of the form is set to our screen’s placeholder. This is so that we can re-draw the snippet back onto the screen after we run the code to save it.
+If we break down the form into just the tags we've added, you can see that we also set the target of the form is set to our Screen’s placeholder. This is so we can re-draw the Snippet back onto the Screen after we run the code to save it.
 
 ## Saving and Updating Events
 
-Now that our action is set to save, when we click on the ‘save’ button, we can run the code in the *save()* function. Here we will use the *update()* function of mongoDB so that we can edit our existing Events, and we will use the *upsert* functionality so that if the Event doesn’t exist (that is, we're creating a new one), we can insert a new Event into the *sales_events* collection.
+Now that our action is set to save, when we click on the *save* button, we can run the code in the *save()* function. Here we'll use the *update()* function of mongoDB so that we can edit our existing Events, and we'll use the *upsert* functionality so that if the Event doesn’t exist (that is, we're creating a new one), we can insert a new Event into the *sales_events* collection.
 
 You can check out more information about the *update()* function [here](/API Documentation/Cloud Code API/Cloud Data/SparkMongoCollectionReadWrite.md).
 
-We can use the hidden field names *event_id* to find the document we want to update:
+We can use the hidden field name's *event_id* to find the document we want to update:
 
 ```
 <gs-row>
@@ -587,7 +589,7 @@ We can use the hidden field names *event_id* to find the document we want to upd
 
 The last thing we want to do in the *sales_edit* Snippet is to have the window close when we save or update an Event. This is where the *form.update = true* line comes in.
 
-We can use that to check if we should close the snippet and then call the *sales_view* Snippet again to re-draw the updated list of Events.
+We can use that to check if we should close the Snippet and then call the *sales_view* Snippet again to re-draw the updated list of Events.
 
 ```
 {{#if form.updated}}
@@ -657,7 +659,7 @@ Now you will be able to go back to your Screen and start creating more Events. Y
 
 ## Deleting Events
 
-The last thing we have to do for the snippets is to create a snippet for deleting events. This is going to be the simplest screen we have done so far.
+The last thing we have to do for the Snippets is to create a Snippet for deleting Events. This is going to be the simplest Screen we have done so far.
 
 To begin with, create a new Snippet called *sales_delete*’. This Snippet will work in a similar way to the previous Snippet we worked on but this will have a function to delete the Event as well as view details.
 
@@ -730,7 +732,7 @@ function SnippetProcessor(data){
 
 Now, if you save this Snippet and reload the main Screen, you'll be able to delete Events too.
 
-Our management screens are now complete. What's left is to create some code to activate and deactivate these Events, and finally to set players into these Segments if the Events are live.
+Our management Screens are now complete. What's left is to create some code to activate and deactivate these Events, and finally to set players into these Segments if the Events are live.
 
 ## Activating and Expiring Events
 
@@ -779,13 +781,13 @@ You can now see your Events being updated if you refresh the *Sales Events* scre
 
 ## Placing Players into Sales Segments
 
-Placing players into segments is pretty straight forward. All we need to do is check for an active Event, and:
+Placing players into Segments is pretty straightforward. All we need to do is check for an active Event, and:
 * If one exists, we assign the player into that sales Segment.
-* If there is no event active, then we need to set the sales Segment to null.
+* If there is no active Event, then we need to set the sales Segment to null.
 
-Now, this system does not allow a player to be assigned more than one sales Segment, but there are alternatives to this which you can explore yourself.
+Now, this system doesn't allow a player to be assigned more than one sales Segment, but there are alternatives to this which you can explore yourself.
 
-The following code will go in the *AuthenticationResponse* script so that we know that we have a player who is verified when we assign the segment to them. Calling it upon login also removes the need for us to do heavy-duty operations like going through all players in your game and updating each one individually:
+The following code will go in the *AuthenticationResponse* script so that we know that we have a player who is verified when we assign the Segment to them. Calling it upon login also removes the need for us to do heavy-duty operations like going through all players in your game and updating each one individually:
 
 ```
 var event = Spark.metaCollection('sales_events').findOne({ "status" : "ACTIVE" });
@@ -828,6 +830,6 @@ Please contact us for further information or advice on any management Screen fun
 
 ## Accompanying Files
 
-There are three files to accompany this tutorial.
+There are three files to accompany this tutorial. To download these files, click [here](http://repo.gamesparks.net.s3.amazonaws.com/docs/tutorial-assets/LiveOpsEvents.zip).
 * The file named *sale_events_snippets.json* can be imported directly into you *Manage>Admin Screens* screens tab, where it will create all necessary Screens for this tutorial in your game.
 * It will not import the necessary Events to activate Events and assign Segments, so those can be found in *AuthenticationResponse.js* and *GS_HOURLY.js*.

@@ -13,3 +13,5 @@ Learn how to build and maintain highly customized reporting and management dashb
 * Using GameSparks [Properties](/Tutorials/Analytics, Segmentation and Game Management/Working with Segmented Properties.md) to deploy custom JSON configuration against objects and applying different values to Properties by Segment.
 * Use [Bulk Jobs](/Tutorials/Analytics, Segmentation and Game Management/Using Bulk Jobs.md) to perform bulk updates.
 * [Build Customer Feedback Screens](/Tutorials/Analytics, Segmentation and Game Management/Building a Customer Feedback Screen.md) to gather feedback from your player pool.
+
+<q>**Live Game Operations!** For guidance and examples on how to set up management screens for your live game operations, check out the tutorials in the [Live Game Operations](/Tutorials/Live Game Operations/README.md) section.</q>
