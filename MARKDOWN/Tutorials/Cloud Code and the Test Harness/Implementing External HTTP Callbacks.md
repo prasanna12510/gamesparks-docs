@@ -24,6 +24,8 @@ To create a script to handle the request, from the Cloud Code page, select the *
   * *apiKey* : The API Key of you game.
   * *serverSecret* : The server secret of you game, accessible from the game overview page by clicking the ![](/img/fa/lock.png) icon.
   * *playerId(optional)* : The ID of the player, if this is supplied, then [Spark.getPlayer()](/API Documentation/Cloud Code API/Spark.md) will be the player specified.
+  
+Note: If you don’t pass a playerId, you still need the / after your serverSecret.
 
 ## Adding Parameters
 
